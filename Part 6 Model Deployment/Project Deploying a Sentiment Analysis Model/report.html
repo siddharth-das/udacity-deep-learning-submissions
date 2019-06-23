@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>SageMaker Project</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+
+<title>Siddharth SageMaker Project</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
 
 <style type="text/css">
     /*!
@@ -199,7 +204,6 @@ th {
   *:before,
   *:after {
     background: transparent !important;
-    color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -6744,15 +6748,15 @@ button.close {
 *
 */
 /*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -6809,6 +6813,19 @@ button.close {
   border: solid 0.08em #eee;
   border-radius: .1em;
 }
+.fa-pull-left {
+  float: left;
+}
+.fa-pull-right {
+  float: right;
+}
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
 .pull-right {
   float: right;
 }
@@ -6824,6 +6841,10 @@ button.close {
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
+}
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
 }
 @-webkit-keyframes fa-spin {
   0% {
@@ -6846,31 +6867,31 @@ button.close {
   }
 }
 .fa-rotate-90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
@@ -7355,6 +7376,7 @@ button.close {
 .fa-twitter:before {
   content: "\f099";
 }
+.fa-facebook-f:before,
 .fa-facebook:before {
   content: "\f09a";
 }
@@ -7367,6 +7389,7 @@ button.close {
 .fa-credit-card:before {
   content: "\f09d";
 }
+.fa-feed:before,
 .fa-rss:before {
   content: "\f09e";
 }
@@ -8004,7 +8027,8 @@ button.close {
 .fa-male:before {
   content: "\f183";
 }
-.fa-gittip:before {
+.fa-gittip:before,
+.fa-gratipay:before {
   content: "\f184";
 }
 .fa-sun-o:before {
@@ -8108,7 +8132,7 @@ button.close {
 .fa-digg:before {
   content: "\f1a6";
 }
-.fa-pied-piper:before {
+.fa-pied-piper-pp:before {
   content: "\f1a7";
 }
 .fa-pied-piper-alt:before {
@@ -8234,6 +8258,7 @@ button.close {
   content: "\f1ce";
 }
 .fa-ra:before,
+.fa-resistance:before,
 .fa-rebel:before {
   content: "\f1d0";
 }
@@ -8247,6 +8272,8 @@ button.close {
 .fa-git:before {
   content: "\f1d3";
 }
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
 .fa-hacker-news:before {
   content: "\f1d4";
 }
@@ -8414,6 +8441,657 @@ button.close {
 }
 .fa-meanpath:before {
   content: "\f20c";
+}
+.fa-buysellads:before {
+  content: "\f20d";
+}
+.fa-connectdevelop:before {
+  content: "\f20e";
+}
+.fa-dashcube:before {
+  content: "\f210";
+}
+.fa-forumbee:before {
+  content: "\f211";
+}
+.fa-leanpub:before {
+  content: "\f212";
+}
+.fa-sellsy:before {
+  content: "\f213";
+}
+.fa-shirtsinbulk:before {
+  content: "\f214";
+}
+.fa-simplybuilt:before {
+  content: "\f215";
+}
+.fa-skyatlas:before {
+  content: "\f216";
+}
+.fa-cart-plus:before {
+  content: "\f217";
+}
+.fa-cart-arrow-down:before {
+  content: "\f218";
+}
+.fa-diamond:before {
+  content: "\f219";
+}
+.fa-ship:before {
+  content: "\f21a";
+}
+.fa-user-secret:before {
+  content: "\f21b";
+}
+.fa-motorcycle:before {
+  content: "\f21c";
+}
+.fa-street-view:before {
+  content: "\f21d";
+}
+.fa-heartbeat:before {
+  content: "\f21e";
+}
+.fa-venus:before {
+  content: "\f221";
+}
+.fa-mars:before {
+  content: "\f222";
+}
+.fa-mercury:before {
+  content: "\f223";
+}
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "\f224";
+}
+.fa-transgender-alt:before {
+  content: "\f225";
+}
+.fa-venus-double:before {
+  content: "\f226";
+}
+.fa-mars-double:before {
+  content: "\f227";
+}
+.fa-venus-mars:before {
+  content: "\f228";
+}
+.fa-mars-stroke:before {
+  content: "\f229";
+}
+.fa-mars-stroke-v:before {
+  content: "\f22a";
+}
+.fa-mars-stroke-h:before {
+  content: "\f22b";
+}
+.fa-neuter:before {
+  content: "\f22c";
+}
+.fa-genderless:before {
+  content: "\f22d";
+}
+.fa-facebook-official:before {
+  content: "\f230";
+}
+.fa-pinterest-p:before {
+  content: "\f231";
+}
+.fa-whatsapp:before {
+  content: "\f232";
+}
+.fa-server:before {
+  content: "\f233";
+}
+.fa-user-plus:before {
+  content: "\f234";
+}
+.fa-user-times:before {
+  content: "\f235";
+}
+.fa-hotel:before,
+.fa-bed:before {
+  content: "\f236";
+}
+.fa-viacoin:before {
+  content: "\f237";
+}
+.fa-train:before {
+  content: "\f238";
+}
+.fa-subway:before {
+  content: "\f239";
+}
+.fa-medium:before {
+  content: "\f23a";
+}
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "\f23b";
+}
+.fa-optin-monster:before {
+  content: "\f23c";
+}
+.fa-opencart:before {
+  content: "\f23d";
+}
+.fa-expeditedssl:before {
+  content: "\f23e";
+}
+.fa-battery-4:before,
+.fa-battery:before,
+.fa-battery-full:before {
+  content: "\f240";
+}
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "\f241";
+}
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "\f242";
+}
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "\f243";
+}
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "\f244";
+}
+.fa-mouse-pointer:before {
+  content: "\f245";
+}
+.fa-i-cursor:before {
+  content: "\f246";
+}
+.fa-object-group:before {
+  content: "\f247";
+}
+.fa-object-ungroup:before {
+  content: "\f248";
+}
+.fa-sticky-note:before {
+  content: "\f249";
+}
+.fa-sticky-note-o:before {
+  content: "\f24a";
+}
+.fa-cc-jcb:before {
+  content: "\f24b";
+}
+.fa-cc-diners-club:before {
+  content: "\f24c";
+}
+.fa-clone:before {
+  content: "\f24d";
+}
+.fa-balance-scale:before {
+  content: "\f24e";
+}
+.fa-hourglass-o:before {
+  content: "\f250";
+}
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "\f251";
+}
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "\f252";
+}
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "\f253";
+}
+.fa-hourglass:before {
+  content: "\f254";
+}
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "\f255";
+}
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "\f256";
+}
+.fa-hand-scissors-o:before {
+  content: "\f257";
+}
+.fa-hand-lizard-o:before {
+  content: "\f258";
+}
+.fa-hand-spock-o:before {
+  content: "\f259";
+}
+.fa-hand-pointer-o:before {
+  content: "\f25a";
+}
+.fa-hand-peace-o:before {
+  content: "\f25b";
+}
+.fa-trademark:before {
+  content: "\f25c";
+}
+.fa-registered:before {
+  content: "\f25d";
+}
+.fa-creative-commons:before {
+  content: "\f25e";
+}
+.fa-gg:before {
+  content: "\f260";
+}
+.fa-gg-circle:before {
+  content: "\f261";
+}
+.fa-tripadvisor:before {
+  content: "\f262";
+}
+.fa-odnoklassniki:before {
+  content: "\f263";
+}
+.fa-odnoklassniki-square:before {
+  content: "\f264";
+}
+.fa-get-pocket:before {
+  content: "\f265";
+}
+.fa-wikipedia-w:before {
+  content: "\f266";
+}
+.fa-safari:before {
+  content: "\f267";
+}
+.fa-chrome:before {
+  content: "\f268";
+}
+.fa-firefox:before {
+  content: "\f269";
+}
+.fa-opera:before {
+  content: "\f26a";
+}
+.fa-internet-explorer:before {
+  content: "\f26b";
+}
+.fa-tv:before,
+.fa-television:before {
+  content: "\f26c";
+}
+.fa-contao:before {
+  content: "\f26d";
+}
+.fa-500px:before {
+  content: "\f26e";
+}
+.fa-amazon:before {
+  content: "\f270";
+}
+.fa-calendar-plus-o:before {
+  content: "\f271";
+}
+.fa-calendar-minus-o:before {
+  content: "\f272";
+}
+.fa-calendar-times-o:before {
+  content: "\f273";
+}
+.fa-calendar-check-o:before {
+  content: "\f274";
+}
+.fa-industry:before {
+  content: "\f275";
+}
+.fa-map-pin:before {
+  content: "\f276";
+}
+.fa-map-signs:before {
+  content: "\f277";
+}
+.fa-map-o:before {
+  content: "\f278";
+}
+.fa-map:before {
+  content: "\f279";
+}
+.fa-commenting:before {
+  content: "\f27a";
+}
+.fa-commenting-o:before {
+  content: "\f27b";
+}
+.fa-houzz:before {
+  content: "\f27c";
+}
+.fa-vimeo:before {
+  content: "\f27d";
+}
+.fa-black-tie:before {
+  content: "\f27e";
+}
+.fa-fonticons:before {
+  content: "\f280";
+}
+.fa-reddit-alien:before {
+  content: "\f281";
+}
+.fa-edge:before {
+  content: "\f282";
+}
+.fa-credit-card-alt:before {
+  content: "\f283";
+}
+.fa-codiepie:before {
+  content: "\f284";
+}
+.fa-modx:before {
+  content: "\f285";
+}
+.fa-fort-awesome:before {
+  content: "\f286";
+}
+.fa-usb:before {
+  content: "\f287";
+}
+.fa-product-hunt:before {
+  content: "\f288";
+}
+.fa-mixcloud:before {
+  content: "\f289";
+}
+.fa-scribd:before {
+  content: "\f28a";
+}
+.fa-pause-circle:before {
+  content: "\f28b";
+}
+.fa-pause-circle-o:before {
+  content: "\f28c";
+}
+.fa-stop-circle:before {
+  content: "\f28d";
+}
+.fa-stop-circle-o:before {
+  content: "\f28e";
+}
+.fa-shopping-bag:before {
+  content: "\f290";
+}
+.fa-shopping-basket:before {
+  content: "\f291";
+}
+.fa-hashtag:before {
+  content: "\f292";
+}
+.fa-bluetooth:before {
+  content: "\f293";
+}
+.fa-bluetooth-b:before {
+  content: "\f294";
+}
+.fa-percent:before {
+  content: "\f295";
+}
+.fa-gitlab:before {
+  content: "\f296";
+}
+.fa-wpbeginner:before {
+  content: "\f297";
+}
+.fa-wpforms:before {
+  content: "\f298";
+}
+.fa-envira:before {
+  content: "\f299";
+}
+.fa-universal-access:before {
+  content: "\f29a";
+}
+.fa-wheelchair-alt:before {
+  content: "\f29b";
+}
+.fa-question-circle-o:before {
+  content: "\f29c";
+}
+.fa-blind:before {
+  content: "\f29d";
+}
+.fa-audio-description:before {
+  content: "\f29e";
+}
+.fa-volume-control-phone:before {
+  content: "\f2a0";
+}
+.fa-braille:before {
+  content: "\f2a1";
+}
+.fa-assistive-listening-systems:before {
+  content: "\f2a2";
+}
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+  content: "\f2a3";
+}
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+  content: "\f2a4";
+}
+.fa-glide:before {
+  content: "\f2a5";
+}
+.fa-glide-g:before {
+  content: "\f2a6";
+}
+.fa-signing:before,
+.fa-sign-language:before {
+  content: "\f2a7";
+}
+.fa-low-vision:before {
+  content: "\f2a8";
+}
+.fa-viadeo:before {
+  content: "\f2a9";
+}
+.fa-viadeo-square:before {
+  content: "\f2aa";
+}
+.fa-snapchat:before {
+  content: "\f2ab";
+}
+.fa-snapchat-ghost:before {
+  content: "\f2ac";
+}
+.fa-snapchat-square:before {
+  content: "\f2ad";
+}
+.fa-pied-piper:before {
+  content: "\f2ae";
+}
+.fa-first-order:before {
+  content: "\f2b0";
+}
+.fa-yoast:before {
+  content: "\f2b1";
+}
+.fa-themeisle:before {
+  content: "\f2b2";
+}
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "\f2b3";
+}
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "\f2b4";
+}
+.fa-handshake-o:before {
+  content: "\f2b5";
+}
+.fa-envelope-open:before {
+  content: "\f2b6";
+}
+.fa-envelope-open-o:before {
+  content: "\f2b7";
+}
+.fa-linode:before {
+  content: "\f2b8";
+}
+.fa-address-book:before {
+  content: "\f2b9";
+}
+.fa-address-book-o:before {
+  content: "\f2ba";
+}
+.fa-vcard:before,
+.fa-address-card:before {
+  content: "\f2bb";
+}
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: "\f2bc";
+}
+.fa-user-circle:before {
+  content: "\f2bd";
+}
+.fa-user-circle-o:before {
+  content: "\f2be";
+}
+.fa-user-o:before {
+  content: "\f2c0";
+}
+.fa-id-badge:before {
+  content: "\f2c1";
+}
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: "\f2c2";
+}
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: "\f2c3";
+}
+.fa-quora:before {
+  content: "\f2c4";
+}
+.fa-free-code-camp:before {
+  content: "\f2c5";
+}
+.fa-telegram:before {
+  content: "\f2c6";
+}
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: "\f2c7";
+}
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: "\f2c8";
+}
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: "\f2c9";
+}
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: "\f2ca";
+}
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: "\f2cb";
+}
+.fa-shower:before {
+  content: "\f2cc";
+}
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: "\f2cd";
+}
+.fa-podcast:before {
+  content: "\f2ce";
+}
+.fa-window-maximize:before {
+  content: "\f2d0";
+}
+.fa-window-minimize:before {
+  content: "\f2d1";
+}
+.fa-window-restore:before {
+  content: "\f2d2";
+}
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: "\f2d3";
+}
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: "\f2d4";
+}
+.fa-bandcamp:before {
+  content: "\f2d5";
+}
+.fa-grav:before {
+  content: "\f2d6";
+}
+.fa-etsy:before {
+  content: "\f2d7";
+}
+.fa-imdb:before {
+  content: "\f2d8";
+}
+.fa-ravelry:before {
+  content: "\f2d9";
+}
+.fa-eercast:before {
+  content: "\f2da";
+}
+.fa-microchip:before {
+  content: "\f2db";
+}
+.fa-snowflake-o:before {
+  content: "\f2dc";
+}
+.fa-superpowers:before {
+  content: "\f2dd";
+}
+.fa-wpexplorer:before {
+  content: "\f2de";
+}
+.fa-meetup:before {
+  content: "\f2e0";
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
 }
 /*!
 *
@@ -8694,6 +9372,10 @@ div.traceback-wrapper {
   max-width: 800px;
   margin: auto;
 }
+div.traceback-wrapper pre.traceback {
+  max-height: 600px;
+  overflow: auto;
+}
 /**
  * Primary styles
  *
@@ -8719,6 +9401,10 @@ body > #header {
   z-index: 100;
 }
 body > #header #header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
   padding-bottom: 5px;
   padding-top: 5px;
   box-sizing: border-box;
@@ -8750,13 +9436,16 @@ body > #header .header-bar {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-@media (max-width: 991px) {
-  #ipython_notebook {
-    margin-left: 10px;
-  }
-}
 [dir="rtl"] #ipython_notebook {
+  margin-right: 10px;
+  margin-left: 0;
+}
+[dir="rtl"] #ipython_notebook.pull-left {
   float: right !important;
+  float: right;
+}
+.flex-spacer {
+  flex: 1;
 }
 #noscript {
   width: auto;
@@ -8791,8 +9480,14 @@ body > #header .header-bar {
 input.ui-button {
   padding: 0.3em 0.9em;
 }
+span#kernel_logo_widget {
+  margin: 0 10px;
+}
 span#login_widget {
   float: right;
+}
+[dir="rtl"] span#login_widget {
+  float: left;
 }
 span#login_widget > .button,
 #logout {
@@ -8908,6 +9603,9 @@ span#login_widget > .button .badge,
   overflow: auto;
   flex: 1;
 }
+.modal-header {
+  cursor: move;
+}
 @media (min-width: 768px) {
   .modal .modal-dialog {
     width: 700px;
@@ -8928,6 +9626,19 @@ span#login_widget > .button .badge,
   display: inline-block;
   margin-bottom: -4px;
 }
+[dir="rtl"] .center-nav form.pull-left {
+  float: right !important;
+  float: right;
+}
+[dir="rtl"] .center-nav .navbar-text {
+  float: right;
+}
+[dir="rtl"] .navbar-inner {
+  text-align: right;
+}
+[dir="rtl"] div.text-left {
+  text-align: right;
+}
 /*!
 *
 * IPython tree view
@@ -8944,34 +9655,42 @@ span#login_widget > .button .badge,
   margin: 0;
 }
 .alternate_upload input.fileinput {
-  text-align: center;
-  vertical-align: middle;
-  display: inline;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
   opacity: 0;
   z-index: 2;
-  width: 12ex;
-  margin-right: -12ex;
+}
+.alternate_upload .btn-xs > input.fileinput {
+  margin: -1px -5px;
 }
 .alternate_upload .btn-upload {
+  position: relative;
   height: 22px;
+}
+::-webkit-file-upload-button {
+  cursor: pointer;
 }
 /**
  * Primary styles
  *
  * Author: Jupyter Development Team
  */
-[dir="rtl"] #tabs li {
-  float: right;
-}
 ul#tabs {
   margin-bottom: 4px;
-}
-[dir="rtl"] ul#tabs {
-  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
   padding-bottom: 4px;
+}
+[dir="rtl"] ul#tabs.nav-tabs > li {
+  float: right;
+}
+[dir="rtl"] ul#tabs.nav.nav-tabs {
+  padding-right: 0;
 }
 ul.breadcrumb a:focus,
 ul.breadcrumb a:hover {
@@ -8991,15 +9710,13 @@ ul.breadcrumb span {
 .list_toolbar .tree-buttons {
   padding-top: 1px;
 }
-[dir="rtl"] .list_toolbar .tree-buttons {
+[dir="rtl"] .list_toolbar .tree-buttons .pull-right {
   float: left !important;
+  float: left;
 }
-[dir="rtl"] .list_toolbar .pull-right {
-  padding-top: 1px;
-  float: left !important;
-}
-[dir="rtl"] .list_toolbar .pull-left {
-  float: right !important;
+[dir="rtl"] .list_toolbar .col-sm-4,
+[dir="rtl"] .list_toolbar .col-sm-8 {
+  float: right;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9055,7 +9772,7 @@ ul.breadcrumb span {
 .list_item > div input {
   margin-right: 7px;
   margin-left: 14px;
-  vertical-align: baseline;
+  vertical-align: text-bottom;
   line-height: 22px;
   position: relative;
   top: -1px;
@@ -9065,6 +9782,9 @@ ul.breadcrumb span {
   margin-left: -1px;
   vertical-align: baseline;
   line-height: 22px;
+}
+[dir="rtl"] .list_item > div input {
+  margin-right: 0;
 }
 .new-file input[type=checkbox] {
   visibility: hidden;
@@ -9080,6 +9800,14 @@ ul.breadcrumb span {
   margin-left: 7px;
   line-height: 22px;
   vertical-align: baseline;
+}
+.item_modified {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+[dir="rtl"] .item_modified.pull-right {
+  float: left !important;
+  float: left;
 }
 .item_buttons {
   line-height: 1em;
@@ -9108,6 +9836,14 @@ ul.breadcrumb span {
   margin-right: 7px;
   float: left;
 }
+[dir="rtl"] .item_buttons.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .item_buttons .kernel-name {
+  margin-left: 7px;
+  float: right;
+}
 .toolbar_info {
   height: 24px;
   line-height: 24px;
@@ -9133,18 +9869,32 @@ ul.breadcrumb span {
   background-color: transparent;
   font-weight: bold;
 }
+.sort_button {
+  display: inline-block;
+  padding-left: 7px;
+}
+[dir="rtl"] .sort_button.pull-right {
+  float: left !important;
+  float: left;
+}
 #tree-selector {
   padding-right: 0px;
-}
-[dir="rtl"] #tree-selector a {
-  float: right;
 }
 #button-select-all {
   min-width: 50px;
 }
+[dir="rtl"] #button-select-all.btn {
+  float: right ;
+}
 #select-all {
   margin-left: 7px;
   margin-right: 2px;
+  margin-top: 2px;
+  height: 16px;
+}
+[dir="rtl"] #select-all.pull-left {
+  float: right !important;
+  float: right;
 }
 .menu_icon {
   margin-right: 2px;
@@ -9162,6 +9912,12 @@ ul.breadcrumb span {
   -moz-osx-font-smoothing: grayscale;
   content: "\f114";
 }
+.folder_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.folder_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .folder_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -9178,6 +9934,12 @@ ul.breadcrumb span {
   content: "\f02d";
   position: relative;
   top: -1px;
+}
+.notebook_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.notebook_icon:before.fa-pull-right {
+  margin-left: .3em;
 }
 .notebook_icon:before.pull-left {
   margin-right: .3em;
@@ -9197,6 +9959,12 @@ ul.breadcrumb span {
   top: -1px;
   color: #5cb85c;
 }
+.running_notebook_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.running_notebook_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .running_notebook_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -9214,6 +9982,12 @@ ul.breadcrumb span {
   position: relative;
   top: -2px;
 }
+.file_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.file_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .file_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -9228,8 +10002,11 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
-[dir="rtl"] #new-menu {
-  text-align: right;
+#new-menu .dropdown-header {
+  font-size: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 0 3px;
+  margin: -3px 20px 0;
 }
 .kernel-menu-icon {
   padding-right: 12px;
@@ -9276,9 +10053,6 @@ ul#new-menu {
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
 }
-[dir="rtl"] #running .col-sm-8 {
-  float: right !important;
-}
 .delete-button {
   display: none;
 }
@@ -9286,6 +10060,12 @@ ul#new-menu {
   display: none;
 }
 .rename-button {
+  display: none;
+}
+.move-button {
+  display: none;
+}
+.download-button {
   display: none;
 }
 .shutdown-button {
@@ -9328,6 +10108,12 @@ ul#new-menu {
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
 }
+.dirty-indicator.fa-pull-left {
+  margin-right: .3em;
+}
+.dirty-indicator.fa-pull-right {
+  margin-left: .3em;
+}
 .dirty-indicator.pull-left {
   margin-right: .3em;
 }
@@ -9342,6 +10128,12 @@ ul#new-menu {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
+}
+.dirty-indicator-dirty.fa-pull-left {
+  margin-right: .3em;
+}
+.dirty-indicator-dirty.fa-pull-right {
+  margin-left: .3em;
 }
 .dirty-indicator-dirty.pull-left {
   margin-right: .3em;
@@ -9358,6 +10150,12 @@ ul#new-menu {
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
 }
+.dirty-indicator-clean.fa-pull-left {
+  margin-right: .3em;
+}
+.dirty-indicator-clean.fa-pull-right {
+  margin-left: .3em;
+}
 .dirty-indicator-clean.pull-left {
   margin-right: .3em;
 }
@@ -9372,6 +10170,12 @@ ul#new-menu {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f00c";
+}
+.dirty-indicator-clean:before.fa-pull-left {
+  margin-right: .3em;
+}
+.dirty-indicator-clean:before.fa-pull-right {
+  margin-left: .3em;
 }
 .dirty-indicator-clean:before.pull-left {
   margin-right: .3em;
@@ -9417,14 +10221,132 @@ ul#new-menu {
     box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
   }
 }
+.CodeMirror-dialog {
+  background-color: #fff;
+}
 /*!
 *
 * IPython notebook
 *
 */
-/* CSS font colors for translated ANSI colors. */
+/* CSS font colors for translated ANSI escape sequences */
+/* The color values are a mix of
+   http://www.xcolors.net/dl/baskerville-ivorylight and
+   http://www.xcolors.net/dl/euphrasia */
+.ansi-black-fg {
+  color: #3E424D;
+}
+.ansi-black-bg {
+  background-color: #3E424D;
+}
+.ansi-black-intense-fg {
+  color: #282C36;
+}
+.ansi-black-intense-bg {
+  background-color: #282C36;
+}
+.ansi-red-fg {
+  color: #E75C58;
+}
+.ansi-red-bg {
+  background-color: #E75C58;
+}
+.ansi-red-intense-fg {
+  color: #B22B31;
+}
+.ansi-red-intense-bg {
+  background-color: #B22B31;
+}
+.ansi-green-fg {
+  color: #00A250;
+}
+.ansi-green-bg {
+  background-color: #00A250;
+}
+.ansi-green-intense-fg {
+  color: #007427;
+}
+.ansi-green-intense-bg {
+  background-color: #007427;
+}
+.ansi-yellow-fg {
+  color: #DDB62B;
+}
+.ansi-yellow-bg {
+  background-color: #DDB62B;
+}
+.ansi-yellow-intense-fg {
+  color: #B27D12;
+}
+.ansi-yellow-intense-bg {
+  background-color: #B27D12;
+}
+.ansi-blue-fg {
+  color: #208FFB;
+}
+.ansi-blue-bg {
+  background-color: #208FFB;
+}
+.ansi-blue-intense-fg {
+  color: #0065CA;
+}
+.ansi-blue-intense-bg {
+  background-color: #0065CA;
+}
+.ansi-magenta-fg {
+  color: #D160C4;
+}
+.ansi-magenta-bg {
+  background-color: #D160C4;
+}
+.ansi-magenta-intense-fg {
+  color: #A03196;
+}
+.ansi-magenta-intense-bg {
+  background-color: #A03196;
+}
+.ansi-cyan-fg {
+  color: #60C6C8;
+}
+.ansi-cyan-bg {
+  background-color: #60C6C8;
+}
+.ansi-cyan-intense-fg {
+  color: #258F8F;
+}
+.ansi-cyan-intense-bg {
+  background-color: #258F8F;
+}
+.ansi-white-fg {
+  color: #C5C1B4;
+}
+.ansi-white-bg {
+  background-color: #C5C1B4;
+}
+.ansi-white-intense-fg {
+  color: #A1A6B2;
+}
+.ansi-white-intense-bg {
+  background-color: #A1A6B2;
+}
+.ansi-default-inverse-fg {
+  color: #FFFFFF;
+}
+.ansi-default-inverse-bg {
+  background-color: #000000;
+}
+.ansi-bold {
+  font-weight: bold;
+}
+.ansi-underline {
+  text-decoration: underline;
+}
+/* The following styles are deprecated an will be removed in a future version */
 .ansibold {
   font-weight: bold;
+}
+.ansi-inverse {
+  outline: 0.5px dotted;
 }
 /* use dark versions for foreground, to improve visibility */
 .ansiblack {
@@ -9503,12 +10425,20 @@ div.cell {
   /* This acts as a spacer between cells, that is outside the border */
   margin: 0px;
   outline: none;
-  border-left-width: 1px;
-  padding-left: 5px;
-  background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
+  position: relative;
+  overflow: visible;
+}
+div.cell:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: transparent;
 }
 div.cell.jupyter-soft-selected {
-  border-left-color: #90CAF9;
   border-left-color: #E3F2FD;
   border-left-width: 1px;
   padding-left: 5px;
@@ -9521,27 +10451,39 @@ div.cell.jupyter-soft-selected {
     border-color: transparent;
   }
 }
-div.cell.selected {
+div.cell.selected,
+div.cell.selected.jupyter-soft-selected {
   border-color: #ababab;
-  border-left-width: 0px;
-  padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+}
+div.cell.selected:before,
+div.cell.selected.jupyter-soft-selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #42A5F5;
 }
 @media print {
-  div.cell.selected {
+  div.cell.selected,
+  div.cell.selected.jupyter-soft-selected {
     border-color: transparent;
   }
 }
-div.cell.selected.jupyter-soft-selected {
-  border-left-width: 0;
-  padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
-}
 .edit_mode div.cell.selected {
   border-color: #66BB6A;
-  border-left-width: 0px;
-  padding-left: 6px;
-  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+}
+.edit_mode div.cell.selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #66BB6A;
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -9737,7 +10679,9 @@ div.input_area > div.highlight > pre {
 .CodeMirror-lines {
   /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
   /* we have set a different line-height and want this to scale with that. */
-  padding: 0.4em;
+  /* Note that this should set vertical padding only, since CodeMirror assumes
+       that horizontal padding will be set on CodeMirror pre */
+  padding: 0.4em 0;
 }
 .CodeMirror-linenumber {
   padding: 0 8px 0 4px;
@@ -9747,11 +10691,24 @@ div.input_area > div.highlight > pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
-  /* .CodeMirror-lines */
-  padding: 0;
+  /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
+    use .CodeMirror-lines for vertical */
+  padding: 0 0.4em;
   border: 0;
   border-radius: 0;
+}
+.CodeMirror-cursor {
+  border-left: 1.4px solid black;
+}
+@media screen and (min-width: 2138px) and (max-width: 4319px) {
+  .CodeMirror-cursor {
+    border-left: 2px solid black;
+  }
+}
+@media screen and (min-width: 4320px) {
+  .CodeMirror-cursor {
+    border-left: 4px solid black;
+  }
 }
 /*
 
@@ -10005,6 +10962,9 @@ div.output_area img.unconfined,
 div.output_area svg.unconfined {
   max-width: none;
 }
+div.output_area .mglyph > img {
+  max-width: none;
+}
 /* This is needed to protect the pre formating from global settings such
    as that of bootstrap */
 .output {
@@ -10043,7 +11003,7 @@ div.output_area svg.unconfined {
 }
 div.output_area pre {
   margin: 0;
-  padding: 0;
+  padding: 1px 0 1px 0;
   border: 0;
   vertical-align: baseline;
   color: black;
@@ -10203,39 +11163,35 @@ div.output_unrecognized a:hover {
 .rendered_html h6:first-child {
   margin-top: 1em;
 }
+.rendered_html ul:not(.list-inline),
+.rendered_html ol:not(.list-inline) {
+  padding-left: 2em;
+}
 .rendered_html ul {
   list-style: disc;
-  margin: 0em 2em;
-  padding-left: 0px;
 }
 .rendered_html ul ul {
   list-style: square;
-  margin: 0em 2em;
+  margin-top: 0;
 }
 .rendered_html ul ul ul {
   list-style: circle;
-  margin: 0em 2em;
 }
 .rendered_html ol {
   list-style: decimal;
-  margin: 0em 2em;
-  padding-left: 0px;
 }
 .rendered_html ol ol {
   list-style: upper-alpha;
-  margin: 0em 2em;
+  margin-top: 0;
 }
 .rendered_html ol ol ol {
   list-style: lower-alpha;
-  margin: 0em 2em;
 }
 .rendered_html ol ol ol ol {
   list-style: lower-roman;
-  margin: 0em 2em;
 }
 .rendered_html ol ol ol ol ol {
   list-style: decimal;
-  margin: 0em 2em;
 }
 .rendered_html * + ul {
   margin-top: 1em;
@@ -10249,14 +11205,23 @@ div.output_unrecognized a:hover {
 }
 .rendered_html pre {
   margin: 1em 2em;
+  padding: 0px;
+  background-color: #fff;
+}
+.rendered_html code {
+  background-color: #eff0f1;
+}
+.rendered_html p code {
+  padding: 1px 5px;
+}
+.rendered_html pre code {
+  background-color: #fff;
 }
 .rendered_html pre,
 .rendered_html code {
   border: 0;
-  background-color: #fff;
   color: #000;
   font-size: 100%;
-  padding: 0px;
 }
 .rendered_html blockquote {
   margin: 1em 2em;
@@ -10264,24 +11229,36 @@ div.output_unrecognized a:hover {
 .rendered_html table {
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
+  border: none;
   border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
 }
 .rendered_html tr,
 .rendered_html th,
 .rendered_html td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  margin: 1em 2em;
-}
-.rendered_html td,
-.rendered_html th {
-  text-align: left;
+  text-align: right;
   vertical-align: middle;
-  padding: 4px;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
 }
 .rendered_html th {
   font-weight: bold;
+}
+.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
 }
 .rendered_html * + table {
   margin-top: 1em;
@@ -10308,6 +11285,15 @@ div.output_unrecognized a:hover {
 .rendered_html img.unconfined,
 .rendered_html svg.unconfined {
   max-width: none;
+}
+.rendered_html .alert {
+  margin-bottom: initial;
+}
+.rendered_html * + .alert {
+  margin-top: 1em;
+}
+[dir="rtl"] .rendered_html p {
+  text-align: right;
 }
 div.text_cell {
   /* Old browsers */
@@ -10362,8 +11348,17 @@ h6:hover .anchor-link {
   overflow-x: auto;
   overflow-y: hidden;
 }
+.text_cell.rendered .rendered_html tr,
+.text_cell.rendered .rendered_html th,
+.text_cell.rendered .rendered_html td {
+  max-width: none;
+}
 .text_cell.unrendered .text_cell_render {
   display: none;
+}
+.text_cell .dropzone .input_area {
+  border: 2px dashed #bababa;
+  margin: -1px;
 }
 .cm-header-1,
 .cm-header-2,
@@ -10500,6 +11495,28 @@ kbd {
   padding-top: 1px;
   padding-bottom: 1px;
 }
+.jupyter-keybindings {
+  padding: 1px;
+  line-height: 24px;
+  border-bottom: 1px solid gray;
+}
+.jupyter-keybindings input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.jupyter-keybindings i {
+  padding: 6px;
+}
+.well code {
+  background-color: #ffffff;
+  border-color: #ababab;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
 /* CSS for the cell toolbar */
 .celltoolbar {
   border: thin solid #CFCFCF;
@@ -10632,6 +11649,152 @@ select[multiple].celltoolbar select {
   margin-left: 5px;
   margin-right: 5px;
 }
+.tags_button_container {
+  width: 100%;
+  display: flex;
+}
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+.tag-container > * {
+  margin: 0 4px;
+}
+.remove-tag-btn {
+  margin-left: 4px;
+}
+.tags-input {
+  display: flex;
+}
+.cell-tag:last-child:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  /* Fade to background color of cell toolbar */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #EEE);
+}
+.tags-input > * {
+  margin-left: 4px;
+}
+.cell-tag,
+.tags-input input,
+.tags-input button {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 1px;
+  box-shadow: none;
+  width: inherit;
+  font-size: inherit;
+  height: 22px;
+  line-height: 22px;
+  padding: 0px 4px;
+  display: inline-block;
+}
+.cell-tag:focus,
+.tags-input input:focus,
+.tags-input button:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.cell-tag::-moz-placeholder,
+.tags-input input::-moz-placeholder,
+.tags-input button::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.cell-tag:-ms-input-placeholder,
+.tags-input input:-ms-input-placeholder,
+.tags-input button:-ms-input-placeholder {
+  color: #999;
+}
+.cell-tag::-webkit-input-placeholder,
+.tags-input input::-webkit-input-placeholder,
+.tags-input button::-webkit-input-placeholder {
+  color: #999;
+}
+.cell-tag::-ms-expand,
+.tags-input input::-ms-expand,
+.tags-input button::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.cell-tag[disabled],
+.tags-input input[disabled],
+.tags-input button[disabled],
+.cell-tag[readonly],
+.tags-input input[readonly],
+.tags-input button[readonly],
+fieldset[disabled] .cell-tag,
+fieldset[disabled] .tags-input input,
+fieldset[disabled] .tags-input button {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.cell-tag[disabled],
+.tags-input input[disabled],
+.tags-input button[disabled],
+fieldset[disabled] .cell-tag,
+fieldset[disabled] .tags-input input,
+fieldset[disabled] .tags-input button {
+  cursor: not-allowed;
+}
+textarea.cell-tag,
+textarea.tags-input input,
+textarea.tags-input button {
+  height: auto;
+}
+select.cell-tag,
+select.tags-input input,
+select.tags-input button {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.cell-tag,
+textarea.tags-input input,
+textarea.tags-input button,
+select[multiple].cell-tag,
+select[multiple].tags-input input,
+select[multiple].tags-input button {
+  height: auto;
+}
+.cell-tag,
+.tags-input button {
+  padding: 0px 4px;
+}
+.cell-tag {
+  background-color: #fff;
+  white-space: nowrap;
+}
+.tags-input input[type=text]:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
 .completions {
   position: absolute;
   z-index: 110;
@@ -10657,16 +11820,28 @@ select[multiple].celltoolbar select {
 .completions select option.context {
   color: #286090;
 }
-#kernel_logo_widget {
-  float: right !important;
-  float: right;
-}
 #kernel_logo_widget .current_kernel_logo {
   display: none;
   margin-top: -1px;
   margin-bottom: -1px;
   width: 32px;
   height: 32px;
+}
+[dir="rtl"] #kernel_logo_widget {
+  float: left !important;
+  float: left;
+}
+.modal .modal-body .move-path {
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+  align-items: center;
+}
+.modal .modal-body .move-path .server-root {
+  padding-right: 20px;
+}
+.modal .modal-body .move-path .path-input {
+  flex: 1;
 }
 #menubar {
   box-sizing: border-box;
@@ -10688,11 +11863,41 @@ select[multiple].celltoolbar select {
 #menubar .navbar-collapse {
   clear: left;
 }
+[dir="rtl"] #menubar .navbar-toggle {
+  float: right;
+}
+[dir="rtl"] #menubar .navbar-collapse {
+  clear: right;
+}
+[dir="rtl"] #menubar .navbar-nav {
+  float: right;
+}
+[dir="rtl"] #menubar .nav {
+  padding-right: 0px;
+}
+[dir="rtl"] #menubar .navbar-nav > li {
+  float: right;
+}
+[dir="rtl"] #menubar .navbar-right {
+  float: left !important;
+}
+[dir="rtl"] ul.dropdown-menu {
+  text-align: right;
+  left: auto;
+}
+[dir="rtl"] ul#new-menu.dropdown-menu {
+  right: auto;
+  left: 0;
+}
 .nav-wrapper {
   border-bottom: 1px solid #e7e7e7;
 }
 i.menu-icon {
   padding-top: 4px;
+}
+[dir="rtl"] i.menu-icon.pull-right {
+  float: left !important;
+  float: left;
 }
 ul#help_menu li a {
   overflow: hidden;
@@ -10700,6 +11905,17 @@ ul#help_menu li a {
 }
 ul#help_menu li a i {
   margin-right: -1.2em;
+}
+[dir="rtl"] ul#help_menu li a {
+  padding-left: 2.2em;
+}
+[dir="rtl"] ul#help_menu li a i {
+  margin-right: 0;
+  margin-left: -1.2em;
+}
+[dir="rtl"] ul#help_menu li a i.pull-right {
+  float: left !important;
+  float: left;
 }
 .dropdown-submenu {
   position: relative;
@@ -10709,6 +11925,10 @@ ul#help_menu li a i {
   left: 100%;
   margin-top: -6px;
   margin-left: -1px;
+}
+[dir="rtl"] .dropdown-submenu > .dropdown-menu {
+  right: 100%;
+  margin-right: -1px;
 }
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
@@ -10727,11 +11947,23 @@ ul#help_menu li a i {
   margin-top: 2px;
   margin-right: -10px;
 }
+.dropdown-submenu > a:after.fa-pull-left {
+  margin-right: .3em;
+}
+.dropdown-submenu > a:after.fa-pull-right {
+  margin-left: .3em;
+}
 .dropdown-submenu > a:after.pull-left {
   margin-right: .3em;
 }
 .dropdown-submenu > a:after.pull-right {
   margin-left: .3em;
+}
+[dir="rtl"] .dropdown-submenu > a:after {
+  float: left;
+  content: "\f0d9";
+  margin-right: 0;
+  margin-left: -10px;
 }
 .dropdown-submenu:hover > a:after {
   color: #262626;
@@ -10748,6 +11980,10 @@ ul#help_menu li a i {
   float: right;
   z-index: 10;
 }
+[dir="rtl"] #notification_area {
+  float: left !important;
+  float: left;
+}
 .indicator_area {
   float: right !important;
   float: right;
@@ -10758,6 +11994,10 @@ ul#help_menu li a i {
   z-index: 10;
   text-align: center;
   width: auto;
+}
+[dir="rtl"] .indicator_area {
+  float: left !important;
+  float: left;
 }
 #kernel_indicator {
   float: right !important;
@@ -10775,6 +12015,12 @@ ul#help_menu li a i {
   padding-left: 5px;
   padding-right: 5px;
 }
+[dir="rtl"] #kernel_indicator {
+  float: left !important;
+  float: left;
+  border-left: 0;
+  border-right: 1px solid;
+}
 #modal_indicator {
   float: right !important;
   float: right;
@@ -10785,6 +12031,10 @@ ul#help_menu li a i {
   z-index: 10;
   text-align: center;
   width: auto;
+}
+[dir="rtl"] #modal_indicator {
+  float: left !important;
+  float: left;
 }
 #readonly-indicator {
   float: right !important;
@@ -10815,6 +12065,12 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f040";
 }
+.edit_mode .modal_indicator:before.fa-pull-left {
+  margin-right: .3em;
+}
+.edit_mode .modal_indicator:before.fa-pull-right {
+  margin-left: .3em;
+}
 .edit_mode .modal_indicator:before.pull-left {
   margin-right: .3em;
 }
@@ -10829,6 +12085,12 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: ' ';
+}
+.command_mode .modal_indicator:before.fa-pull-left {
+  margin-right: .3em;
+}
+.command_mode .modal_indicator:before.fa-pull-right {
+  margin-left: .3em;
 }
 .command_mode .modal_indicator:before.pull-left {
   margin-right: .3em;
@@ -10845,6 +12107,12 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f10c";
 }
+.kernel_idle_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_idle_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .kernel_idle_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -10859,6 +12127,12 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f111";
+}
+.kernel_busy_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_busy_icon:before.fa-pull-right {
+  margin-left: .3em;
 }
 .kernel_busy_icon:before.pull-left {
   margin-right: .3em;
@@ -10875,6 +12149,12 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f1e2";
 }
+.kernel_dead_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_dead_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .kernel_dead_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -10889,6 +12169,12 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f127";
+}
+.kernel_disconnected_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_disconnected_icon:before.fa-pull-right {
+  margin-left: .3em;
 }
 .kernel_disconnected_icon:before.pull-left {
   margin-right: .3em;
@@ -11279,27 +12565,46 @@ div#pager .ui-resizable-handle::after {
   flex: 1;
 }
 span.save_widget {
-  margin-top: 6px;
+  height: 30px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 50%;
+  flex: 1;
 }
 span.save_widget span.filename {
-  height: 1em;
+  height: 100%;
   line-height: 1em;
-  padding: 3px;
   margin-left: 16px;
   border: none;
   font-size: 146.5%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   border-radius: 2px;
 }
 span.save_widget span.filename:hover {
   background-color: #e6e6e6;
 }
+[dir="rtl"] span.save_widget.pull-left {
+  float: right !important;
+  float: right;
+}
+[dir="rtl"] span.save_widget span.filename {
+  margin-left: 0;
+  margin-right: 16px;
+}
 span.checkpoint_status,
 span.autosave_status {
   font-size: small;
+  white-space: nowrap;
+  padding: 0 5px;
 }
 @media (max-width: 767px) {
   span.save_widget {
     font-size: small;
+    padding: 0 0 0 5px;
   }
   span.checkpoint_status,
   span.autosave_status {
@@ -11343,6 +12648,9 @@ span.autosave_status {
   margin-top: 0px;
   margin-left: 5px;
 }
+.toolbar-btn-label {
+  margin-left: 6px;
+}
 #maintoolbar {
   margin-bottom: -3px;
   margin-top: -8px;
@@ -11362,6 +12670,10 @@ span.autosave_status {
 }
 .select-xs {
   height: 24px;
+}
+[dir="rtl"] .btn-group > .btn,
+.btn-group-vertical > .btn {
+  float: right;
 }
 .pulse,
 .dropdown-menu > li > a.pulse,
@@ -11512,6 +12824,10 @@ ul.typeahead-list i {
   margin-left: -10px;
   width: 18px;
 }
+[dir="rtl"] ul.typeahead-list i {
+  margin-left: 0;
+  margin-right: -10px;
+}
 ul.typeahead-list {
   max-height: 80vh;
   overflow: auto;
@@ -11520,6 +12836,13 @@ ul.typeahead-list > li > a {
   /** Firefox bug **/
   /* see https://github.com/jupyter/notebook/issues/559 */
   white-space: normal;
+}
+ul.typeahead-list  > li > a.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .typeahead-list {
+  text-align: right;
 }
 .cmd-palette .modal-body {
   padding: 7px;
@@ -11531,10 +12854,19 @@ ul.typeahead-list > li > a {
   outline: none;
 }
 .no-shortcut {
-  display: none;
+  min-width: 20px;
+  color: transparent;
+}
+[dir="rtl"] .no-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .command-shortcut.pull-right {
+  float: left !important;
+  float: left;
 }
 .command-shortcut:before {
-  content: "(command)";
+  content: "(command mode)";
   padding-right: 3px;
   color: #777777;
 }
@@ -11543,6 +12875,10 @@ ul.typeahead-list > li > a {
   padding-right: 3px;
   color: #777777;
 }
+[dir="rtl"] .edit-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
 #find-and-replace #replace-preview .match,
 #find-and-replace #replace-preview .insert {
   background-color: #BBDEFB;
@@ -11550,6 +12886,12 @@ ul.typeahead-list > li > a {
   border-style: solid;
   border-width: 1px;
   border-radius: 0px;
+}
+[dir="ltr"] #find-and-replace .input-group-btn + .form-control {
+  border-left: none;
+}
+[dir="rtl"] #find-and-replace .input-group-btn + .form-control {
+  border-right: none;
 }
 #find-and-replace #replace-preview .replace .match {
   background-color: #FFCDD2;
@@ -11747,7 +13089,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11772,8 +13114,7 @@ div#notebook {
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Creating-a-Sentiment-Analysis-Web-App">Creating a Sentiment Analysis Web App<a class="anchor-link" href="#Creating-a-Sentiment-Analysis-Web-App">&#182;</a></h1><h2 id="Using-PyTorch-and-SageMaker">Using PyTorch and SageMaker<a class="anchor-link" href="#Using-PyTorch-and-SageMaker">&#182;</a></h2><p><em>Deep Learning Nanodegree Program | Deployment</em></p>
 <hr>
@@ -11800,8 +13141,7 @@ div#notebook {
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-1:-Downloading-the-data">Step 1: Downloading the data<a class="anchor-link" href="#Step-1:-Downloading-the-data">&#182;</a></h2><p>As in the XGBoost in SageMaker notebook, we will be using the <a href="http://ai.stanford.edu/~amaas/data/sentiment/">IMDb dataset</a></p>
 <blockquote><p>Maas, Andrew L., et al. <a href="http://ai.stanford.edu/~amaas/data/sentiment/">Learning Word Vectors for Sentiment Analysis</a>. In <em>Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies</em>. Association for Computational Linguistics, 2011.</p>
@@ -11812,7 +13152,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">mkdir</span> ../data
@@ -11820,7 +13160,7 @@ div#notebook {
 <span class="o">!</span>tar -zxf ../data/aclImdb_v1.tar.gz -C ../data
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -11830,21 +13170,21 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>mkdir: cannot create directory ‘../data’: File exists
---2019-01-13 06:26:29--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+--2019-06-23 11:00:43--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 Resolving ai.stanford.edu (ai.stanford.edu)... 171.64.68.10
 Connecting to ai.stanford.edu (ai.stanford.edu)|171.64.68.10|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 84125825 (80M) [application/x-gzip]
 Saving to: ‘../data/aclImdb_v1.tar.gz’
 
-../data/aclImdb_v1. 100%[===================&gt;]  80.23M  10.7MB/s    in 9.2s    
+../data/aclImdb_v1. 100%[===================&gt;]  80.23M  40.7MB/s    in 2.0s    
 
-2019-01-13 06:26:39 (8.72 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
+2019-06-23 11:00:45 (40.7 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
 
 </pre>
 </div>
@@ -11855,8 +13195,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-2:-Preparing-and-Processing-the-data">Step 2: Preparing and Processing the data<a class="anchor-link" href="#Step-2:-Preparing-and-Processing-the-data">&#182;</a></h2><p>Also, as in the XGBoost notebook, we will be doing some initial data processing. The first few steps are the same as in the XGBoost example. To begin with, we will read in each of the reviews and combine them into a single input structure. Then, we will split the dataset into a training set and a testing set.</p>
 
@@ -11865,7 +13204,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -11898,14 +13237,14 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
     <span class="k">return</span> <span class="n">data</span><span class="p">,</span> <span class="n">labels</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">read_imdb_data</span><span class="p">()</span>
@@ -11914,7 +13253,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
             <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">][</span><span class="s1">&#39;pos&#39;</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">][</span><span class="s1">&#39;neg&#39;</span><span class="p">])))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -11924,7 +13263,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -11938,8 +13277,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now that we've read the raw training and testing data from the downloaded dataset, we will combine the positive and negative reviews and shuffle the resulting records.</p>
 
@@ -11948,7 +13286,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="k">import</span> <span class="n">shuffle</span>
@@ -11970,21 +13308,21 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
     <span class="k">return</span> <span class="n">data_train</span><span class="p">,</span> <span class="n">data_test</span><span class="p">,</span> <span class="n">labels_train</span><span class="p">,</span> <span class="n">labels_test</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">test_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">test_y</span> <span class="o">=</span> <span class="n">prepare_imdb_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IMDb reviews (combined): train = </span><span class="si">{}</span><span class="s2">, test = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">train_X</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_X</span><span class="p">)))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -11994,7 +13332,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -12008,8 +13346,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now that we have our training and testing sets unified and prepared, we should do a quick check and see an example of the data our model will be trained on. This is generally a good idea as it allows you to see how each of the further processing steps affects the reviews and it also ensures that the data has been loaded correctly.</p>
 
@@ -12018,14 +13355,14 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">train_X</span><span class="p">[</span><span class="mi">100</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">train_y</span><span class="p">[</span><span class="mi">100</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12035,11 +13372,11 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>This is one horror movie based TV show that gets it right. Friday the 13th the series had no connection to the movies. Poltergeist the legacy: I&#39;m not so sure. It may have been loosely connected to the movies. It feels like they just throw a famous title on a show so fans will watch it.&lt;br /&gt;&lt;br /&gt;It shows Freddy being burned by the Elm street parents(in the 1st episode I believe) and the amount of parents were disappointing. With all the kids he targeted in the 1st 3 movies, you&#39;d expect there to be more parents. But oh well.&lt;br /&gt;&lt;br /&gt;Freddy is basically the narrator for the show. He watches the actions of people in the real world sometimes getting involved somehow. Just like other anthology shows like Tales from the crypt, there&#39;s a supernatural or surprise ending twist involved.&lt;br /&gt;&lt;br /&gt;The acting lacks but believe it or not: the violence sometimes surpasses that of the movie. This show lasted a couple of seasons and was made around the time of the 4th movie. i heard it was canceled due to protesting parents. I watched a lot of R rated stuff as a kid, so its a shame parents had to ruin it for everyone. 4 more movies came after the series , so it wasn&#39;t a total loss.
+<pre>Sort of like a very primitive episode of &#34;General Hospital&#34; set in a natal ward (and one for tough cases at that), this fast-moving programmer has a satisfying emotional impact -- mainly because Eric Linden, as the distraught young husband in the main plot, is so palpably a wreck, and with such good reason. His expectant wife, Loretta Young, is brought to the ward at the beginning of a 20-year prison sentence for offing a lecher who probably had it coming to him; Ms. Young, as always, doesn&#39;t do anything to disinvite audience sympathy, and she&#39;s a little too good to be true, though sympathetic and lovely to look at, of course. Her difficult pregnancy and relationships with the other girls of the ward form the heart of the movie, and the outcome -- not an entirely happy one -- feels right. Aline MacMahon, &#34;one of the cinema&#39;s few perfect actresses,&#34; in the apt words of film historian David Thomson, exudes warmth and authority as the head nurse, and Glenda Farrell, as a none-too-willing new mom of twins, gets to croon &#34;Frankie and Johnny&#34; as a drunken lullaby. Frank McHugh figures in another subplot, and he gets to show more range than Warners usually permitted him. It&#39;s scaled and paced modestly, and Linden&#39;s expectant-dad panic stays with you for days -- this sort of part was often played for laughs, but he&#39;s a terrified young kid in trouble, and very persuasive.
 1
 </pre>
 </div>
@@ -12050,8 +13387,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The first step in processing the reviews is to make sure that any html tags that appear should be removed. In addition we wish to tokenize our input, that way words such as <em>entertained</em> and <em>entertaining</em> are considered the same with regard to sentiment analysis.</p>
 
@@ -12060,7 +13396,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -12083,14 +13419,13 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
     <span class="k">return</span> <span class="n">words</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The <code>review_to_words</code> method defined above uses <code>BeautifulSoup</code> to remove any html tags that appear and uses the <code>nltk</code> package to tokenize the reviews. As a check to ensure we know how everything is working, try applying <code>review_to_words</code> to one of the reviews in the training set.</p>
 
@@ -12099,7 +13434,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply review_to_words to a review (train_X[100] or any other review)</span>
@@ -12107,7 +13442,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 <span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12117,11 +13452,11 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;one&#39;, &#39;horror&#39;, &#39;movi&#39;, &#39;base&#39;, &#39;tv&#39;, &#39;show&#39;, &#39;get&#39;, &#39;right&#39;, &#39;friday&#39;, &#39;13th&#39;, &#39;seri&#39;, &#39;connect&#39;, &#39;movi&#39;, &#39;poltergeist&#39;, &#39;legaci&#39;, &#39;sure&#39;, &#39;may&#39;, &#39;loos&#39;, &#39;connect&#39;, &#39;movi&#39;, &#39;feel&#39;, &#39;like&#39;, &#39;throw&#39;, &#39;famou&#39;, &#39;titl&#39;, &#39;show&#39;, &#39;fan&#39;, &#39;watch&#39;, &#39;show&#39;, &#39;freddi&#39;, &#39;burn&#39;, &#39;elm&#39;, &#39;street&#39;, &#39;parent&#39;, &#39;1st&#39;, &#39;episod&#39;, &#39;believ&#39;, &#39;amount&#39;, &#39;parent&#39;, &#39;disappoint&#39;, &#39;kid&#39;, &#39;target&#39;, &#39;1st&#39;, &#39;3&#39;, &#39;movi&#39;, &#39;expect&#39;, &#39;parent&#39;, &#39;oh&#39;, &#39;well&#39;, &#39;freddi&#39;, &#39;basic&#39;, &#39;narrat&#39;, &#39;show&#39;, &#39;watch&#39;, &#39;action&#39;, &#39;peopl&#39;, &#39;real&#39;, &#39;world&#39;, &#39;sometim&#39;, &#39;get&#39;, &#39;involv&#39;, &#39;somehow&#39;, &#39;like&#39;, &#39;antholog&#39;, &#39;show&#39;, &#39;like&#39;, &#39;tale&#39;, &#39;crypt&#39;, &#39;supernatur&#39;, &#39;surpris&#39;, &#39;end&#39;, &#39;twist&#39;, &#39;involv&#39;, &#39;act&#39;, &#39;lack&#39;, &#39;believ&#39;, &#39;violenc&#39;, &#39;sometim&#39;, &#39;surpass&#39;, &#39;movi&#39;, &#39;show&#39;, &#39;last&#39;, &#39;coupl&#39;, &#39;season&#39;, &#39;made&#39;, &#39;around&#39;, &#39;time&#39;, &#39;4th&#39;, &#39;movi&#39;, &#39;heard&#39;, &#39;cancel&#39;, &#39;due&#39;, &#39;protest&#39;, &#39;parent&#39;, &#39;watch&#39;, &#39;lot&#39;, &#39;r&#39;, &#39;rate&#39;, &#39;stuff&#39;, &#39;kid&#39;, &#39;shame&#39;, &#39;parent&#39;, &#39;ruin&#39;, &#39;everyon&#39;, &#39;4&#39;, &#39;movi&#39;, &#39;came&#39;, &#39;seri&#39;, &#39;total&#39;, &#39;loss&#39;]
+<pre>[&#39;sort&#39;, &#39;like&#39;, &#39;primit&#39;, &#39;episod&#39;, &#39;gener&#39;, &#39;hospit&#39;, &#39;set&#39;, &#39;natal&#39;, &#39;ward&#39;, &#39;one&#39;, &#39;tough&#39;, &#39;case&#39;, &#39;fast&#39;, &#39;move&#39;, &#39;programm&#39;, &#39;satisfi&#39;, &#39;emot&#39;, &#39;impact&#39;, &#39;mainli&#39;, &#39;eric&#39;, &#39;linden&#39;, &#39;distraught&#39;, &#39;young&#39;, &#39;husband&#39;, &#39;main&#39;, &#39;plot&#39;, &#39;palpabl&#39;, &#39;wreck&#39;, &#39;good&#39;, &#39;reason&#39;, &#39;expect&#39;, &#39;wife&#39;, &#39;loretta&#39;, &#39;young&#39;, &#39;brought&#39;, &#39;ward&#39;, &#39;begin&#39;, &#39;20&#39;, &#39;year&#39;, &#39;prison&#39;, &#39;sentenc&#39;, &#39;of&#39;, &#39;lecher&#39;, &#39;probabl&#39;, &#39;come&#39;, &#39;ms&#39;, &#39;young&#39;, &#39;alway&#39;, &#39;anyth&#39;, &#39;disinvit&#39;, &#39;audienc&#39;, &#39;sympathi&#39;, &#39;littl&#39;, &#39;good&#39;, &#39;true&#39;, &#39;though&#39;, &#39;sympathet&#39;, &#39;love&#39;, &#39;look&#39;, &#39;cours&#39;, &#39;difficult&#39;, &#39;pregnanc&#39;, &#39;relationship&#39;, &#39;girl&#39;, &#39;ward&#39;, &#39;form&#39;, &#39;heart&#39;, &#39;movi&#39;, &#39;outcom&#39;, &#39;entir&#39;, &#39;happi&#39;, &#39;one&#39;, &#39;feel&#39;, &#39;right&#39;, &#39;alin&#39;, &#39;macmahon&#39;, &#39;one&#39;, &#39;cinema&#39;, &#39;perfect&#39;, &#39;actress&#39;, &#39;apt&#39;, &#39;word&#39;, &#39;film&#39;, &#39;historian&#39;, &#39;david&#39;, &#39;thomson&#39;, &#39;exud&#39;, &#39;warmth&#39;, &#39;author&#39;, &#39;head&#39;, &#39;nurs&#39;, &#39;glenda&#39;, &#39;farrel&#39;, &#39;none&#39;, &#39;will&#39;, &#39;new&#39;, &#39;mom&#39;, &#39;twin&#39;, &#39;get&#39;, &#39;croon&#39;, &#39;franki&#39;, &#39;johnni&#39;, &#39;drunken&#39;, &#39;lullabi&#39;, &#39;frank&#39;, &#39;mchugh&#39;, &#39;figur&#39;, &#39;anoth&#39;, &#39;subplot&#39;, &#39;get&#39;, &#39;show&#39;, &#39;rang&#39;, &#39;warner&#39;, &#39;usual&#39;, &#39;permit&#39;, &#39;scale&#39;, &#39;pace&#39;, &#39;modestli&#39;, &#39;linden&#39;, &#39;expect&#39;, &#39;dad&#39;, &#39;panic&#39;, &#39;stay&#39;, &#39;day&#39;, &#39;sort&#39;, &#39;part&#39;, &#39;often&#39;, &#39;play&#39;, &#39;laugh&#39;, &#39;terrifi&#39;, &#39;young&#39;, &#39;kid&#39;, &#39;troubl&#39;, &#39;persuas&#39;]
 </pre>
 </div>
 </div>
@@ -12131,8 +13466,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question:</strong> Above we mentioned that <code>review_to_words</code> method removes html formatting and allows us to tokenize the words found in a review, for example, converting <em>entertained</em> and <em>entertaining</em> into <em>entertain</em> so that they are treated as though they are the same word. What else, if anything, does this method do to the input?</p>
 
@@ -12140,23 +13474,19 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>Basically, the <code>review_to_words</code> provide several functionalities including tokenizing words as it is described question. 
-The important functionality is the removing <code>stop words</code>, as it is not much important, because it don't impact much to the context of review. And it provided two more functionalities like below.</p>
 <ul>
-<li>Changing upper-case characters inside word, to lower case</li>
-<li>Removing html tags as they are not necessary</li>
+<li>Changing upper-case to lower case</li>
+<li>Removing stopwords from review</li>
 </ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The method below applies the <code>review_to_words</code> method to each of the reviews in the training and testing datasets. In addition it caches the results. This is because performing this processing step can take a long time. This way if you are unable to complete the notebook in the current session, you can come back without needing to process the data a second time.</p>
 
@@ -12165,7 +13495,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -12208,21 +13538,21 @@ The important functionality is the removing <code>stop words</code>, as it is no
     <span class="k">return</span> <span class="n">words_train</span><span class="p">,</span> <span class="n">words_test</span><span class="p">,</span> <span class="n">labels_train</span><span class="p">,</span> <span class="n">labels_test</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Preprocess data</span>
 <span class="n">train_X</span><span class="p">,</span> <span class="n">test_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">test_y</span> <span class="o">=</span> <span class="n">preprocess_data</span><span class="p">(</span><span class="n">train_X</span><span class="p">,</span> <span class="n">test_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">test_y</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12232,11 +13562,11 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Wrote preprocessed data to cache file: preprocessed_data.pkl
+<pre>Read preprocessed data from cache file: preprocessed_data.pkl
 </pre>
 </div>
 </div>
@@ -12246,8 +13576,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Transform-the-data">Transform the data<a class="anchor-link" href="#Transform-the-data">&#182;</a></h2><p>In the XGBoost notebook we transformed the data from its word representation to a bag-of-words feature representation. For the model we are going to construct in this notebook we will construct a feature representation which is very similar. To start, we will represent each word as an integer. Of course, some of the words that appear in the reviews occur very infrequently and so likely don't contain much information for the purposes of sentiment analysis. The way we will deal with this problem is that we will fix the size of our working vocabulary and we will only include the words that appear most frequently. We will then combine all of the infrequent words into a single category and, in our case, we will label it as <code>1</code>.</p>
 <p>Since we will be using a recurrent neural network, it will be convenient if the length of each review is the same. To do this, we will fix a size for our reviews and then pad short reviews with the category 'no word' (which we will label <code>0</code>) and truncate long reviews.</p>
@@ -12256,8 +13585,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="(TODO)-Create-a-word-dictionary">(TODO) Create a word dictionary<a class="anchor-link" href="#(TODO)-Create-a-word-dictionary">&#182;</a></h3><p>To begin with, we need to construct a way to map words that appear in the reviews to integers. Here we fix the size of our vocabulary (including the 'no word' and 'infrequent' categories) to be <code>5000</code> but you may wish to change this to see how it affects the model.</p>
 <blockquote><p><strong>TODO:</strong> Complete the implementation for the <code>build_dict()</code> method below. Note that even though the vocab_size is set to <code>5000</code>, we only want to construct a mapping for the most frequently appearing <code>4998</code> words. This is because we want to reserve the special labels <code>0</code> for 'no word' and <code>1</code> for 'infrequent word'.</p>
@@ -12268,7 +13596,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -12300,27 +13628,26 @@ The important functionality is the removing <code>stop words</code>, as it is no
     <span class="k">return</span> <span class="n">word_dict</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_dict</span> <span class="o">=</span> <span class="n">build_dict</span><span class="p">(</span><span class="n">train_X</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question:</strong> What are the five most frequently appearing (tokenized) words in the training set? Does it makes sense that these words appear frequently in the training set?</p>
 
@@ -12328,8 +13655,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 
@@ -12338,14 +13664,14 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Use this space to determine the five most frequently appearing words in the training set.</span>
 <span class="nb">list</span><span class="p">(</span><span class="n">word_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12355,7 +13681,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -12371,8 +13697,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Save-word_dict">Save <code>word_dict</code><a class="anchor-link" href="#Save-word_dict">&#182;</a></h3><p>Later on when we construct an endpoint which processes a submitted review we will need to make use of the <code>word_dict</code> which we have created. As such, we will save it to a file now for future use.</p>
 
@@ -12381,7 +13706,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_dir</span> <span class="o">=</span> <span class="s1">&#39;../data/pytorch&#39;</span> <span class="c1"># The folder we will use for storing data</span>
@@ -12389,28 +13714,27 @@ The important functionality is the removing <code>stop words</code>, as it is no
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">data_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s1">&#39;word_dict.pkl&#39;</span><span class="p">),</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Transform-the-reviews">Transform the reviews<a class="anchor-link" href="#Transform-the-reviews">&#182;</a></h3><p>Now that we have our word dictionary which allows us to transform the words appearing in the reviews into integers, it is time to make use of it and convert our reviews to their integer sequence representation, making sure to pad or truncate to a fixed length, which in our case is <code>500</code>.</p>
 
@@ -12419,7 +13743,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert_and_pad</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">sentence</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">500</span><span class="p">):</span>
@@ -12448,28 +13772,27 @@ The important functionality is the removing <code>stop words</code>, as it is no
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">result</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">lengths</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_X_len</span> <span class="o">=</span> <span class="n">convert_and_pad_data</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">train_X</span><span class="p">)</span>
 <span class="n">test_X</span><span class="p">,</span> <span class="n">test_X_len</span> <span class="o">=</span> <span class="n">convert_and_pad_data</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">test_X</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As a quick check to make sure that things are working as intended, check to see what one of the reviews in the training set looks like after having been processeed. Does this look reasonable? What is the length of a review in the training set?</p>
 
@@ -12478,14 +13801,14 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use this cell to examine one of the processed reviews to make sure everything is working as intended.</span>
 <span class="n">train_X</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12495,28 +13818,28 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([   4,  102,    2,  341,  168,   20,   10,  113, 2192, 4026,  120,
-        854,    2,    1, 4222,  142,  121, 1187,  854,    2,   62,    5,
-        757,  725,  309,   20,  123,   12,   20, 1569,  954, 3969,  577,
-        614, 2868,  182,   94,  916,  614,  287,  138, 1526, 2868,  289,
-          2,  148,  614,  393,   17, 1569,  392, 1233,   20,   12,  104,
-         23,   71,   92,  434,   10,  268,  740,    5, 4734,   20,    5,
-        587,    1, 2137,  259,   22,  437,  268,   32,  306,   94,  498,
-        434, 3821,    2,   20,  136,  290,  506,   34,  110,    6, 4827,
-          2,  487, 2648,  615, 3281,  614,   12,   70, 1207,  210,  465,
-        138,  756,  614,  962,  226,  407,    2,  333,  120,  274, 1630,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+<pre>array([ 546,   13,    1,    1, 1172,   50,  186,  248,  107, 1529,  138,
+        334,    1,    1,   75, 2449,   69,    4,  448,  180,   82,  226,
+        826,  207,  858,  342,  858, 2560, 4325,   97,  445,  455,  473,
+       3334, 1179,  148,   47,    1, 4786,  595, 1323, 1405,    6,    1,
+          9,  733,   47, 3168,  339,  119,  850,  244,  204,  969, 2248,
+       1635,    1, 1790,    1,  820, 3820, 1992,  474, 1583,  735, 1525,
+        342,  704, 1497,  406,    1,    1,  826,   22,  625,  319, 1413,
+        722,  819, 1094, 1544,  762,   78,  103,  138, 1305,  230,  331,
+         71,    1,  138,  103,  230,   22,  453, 1690,  832,   22,  138,
+        240,    1,  230, 2799,   50,  420,    1,  191,  262,  475, 3854,
+        118,  440,    1, 1744, 2702,  186,   36,   77, 1027, 4820,    1,
+         18,    1, 1172,    2,  393,  436,   15,   30,  114,  178,   61,
+         66,  291,  485,   18, 1466,  292, 1466,  933, 2060,    2,  161,
+         99,    7,  180,  439, 2618,   44,   72,   89, 1094, 4249, 1183,
+        767,  469,  322,  808,   55, 1327,  321,  546,  156,   77,    2,
+        579,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
@@ -12556,8 +13879,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question:</strong> In the cells above we use the <code>preprocess_data</code> and <code>convert_and_pad_data</code> methods to process both the training and testing set. Why or why not might this be a problem?</p>
 
@@ -12565,19 +13887,17 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p><code>preprocess_data</code> perform that each review is applied to <code>review_to_words</code> method, all of its output is saved as file. And it is to load quickly, when we run this notebook in second time. We experience that running <code>review_to_words</code> method take long time, so saving file is to avoid to perform it.</p>
-<p><code>convert_and_pad</code> method is used to pass uniformed number of words to neural network. As review is written by human being, its length can't be same.</p>
+<p>preprocess_data perform that each review is applied to review_to_words method, all of its output is saved as file. And it is to load quickly, when we run this notebook in second time. We experience that running review_to_words method take long time, so saving file is to avoid to perform it.</p>
+<p>convert_and_pad method is used to pass uniformed number of words to neural network. As review is written by human being, its length can't be same.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-3:-Upload-the-data-to-S3">Step 3: Upload the data to S3<a class="anchor-link" href="#Step-3:-Upload-the-data-to-S3">&#182;</a></h2><p>As in the XGBoost notebook, we will need to upload the training dataset to S3 in order for our training code to access it. For now we will save it locally and we will upload to S3 later on.</p>
 <h3 id="Save-the-processed-training-dataset-locally">Save the processed training dataset locally<a class="anchor-link" href="#Save-the-processed-training-dataset-locally">&#182;</a></h3><p>It is important to note the format of the data that we are saving as we will need to know it when we write the training code. In our case, each row of the dataset has the form <code>label</code>, <code>length</code>, <code>review[500]</code> where <code>review[500]</code> is a sequence of <code>500</code> integers representing the words in the review.</p>
@@ -12587,7 +13907,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -12596,14 +13916,13 @@ The important functionality is the removing <code>stop words</code>, as it is no
         <span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s1">&#39;train.csv&#39;</span><span class="p">),</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Uploading-the-training-data">Uploading the training data<a class="anchor-link" href="#Uploading-the-training-data">&#182;</a></h3><p>Next, we need to upload the training data to the SageMaker default S3 bucket so that we can provide access to it while training our model.</p>
 
@@ -12612,7 +13931,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sagemaker</span>
@@ -12625,27 +13944,26 @@ The important functionality is the removing <code>stop words</code>, as it is no
 <span class="n">role</span> <span class="o">=</span> <span class="n">sagemaker</span><span class="o">.</span><span class="n">get_execution_role</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_data</span> <span class="o">=</span> <span class="n">sagemaker_session</span><span class="o">.</span><span class="n">upload_data</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">bucket</span><span class="o">=</span><span class="n">bucket</span><span class="p">,</span> <span class="n">key_prefix</span><span class="o">=</span><span class="n">prefix</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>NOTE:</strong> The cell above uploads the entire contents of our data directory. This includes the <code>word_dict.pkl</code> file. This is fortunate as we will need this later on when we create an endpoint that accepts an arbitrary review. For now, we will just take note of the fact that it resides in the data directory (and so also in the S3 training bucket) and that we will need to make sure it gets saved in the model directory.</p>
 
@@ -12653,8 +13971,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-4:-Build-and-Train-the-PyTorch-Model">Step 4: Build and Train the PyTorch Model<a class="anchor-link" href="#Step-4:-Build-and-Train-the-PyTorch-Model">&#182;</a></h2><p>In the XGBoost notebook we discussed what a model is in the SageMaker framework. In particular, a model comprises three objects</p>
 <ul>
@@ -12670,13 +13987,13 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pygmentize train/model.py
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12686,13 +14003,13 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">torch.nn</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg">nn</span>
+<pre><span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch.nn</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">nn</span>
 
-<span class="ansi-blue-fg">class</span> <span class="ansi-green-fg">LSTMClassifier</span>(nn.Module):
+<span class="ansi-blue-fg">class</span> <span class="ansi-green-fg ansi-underline">LSTMClassifier</span>(nn.Module):
     <span class="ansi-yellow-fg">&#34;&#34;&#34;</span>
 <span class="ansi-yellow-fg">    This is the simple RNN model we will be using to perform Sentiment Analysis.</span>
 <span class="ansi-yellow-fg">    &#34;&#34;&#34;</span>
@@ -12731,8 +14048,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The important takeaway from the implementation provided is that there are three parameters that we may wish to tweak to improve the performance of our model. These are the embedding dimension, the hidden dimension and the size of the vocabulary. We will likely want to make these parameters configurable in the training script so that if we wish to modify them we do not need to modify the script itself. We will see how to do this later on. To start we will write some of the training code in the notebook so that we can more easily diagnose any issues that arise.</p>
 <p>First we will load a small portion of the training data set to use as a sample. It would be very time consuming to try and train the model completely in the notebook as we do not have access to a gpu and the compute instance that we are using is not particularly powerful. However, we can work on a small bit of the data to get a feel for how our training script is behaving.</p>
@@ -12742,7 +14058,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
@@ -12761,14 +14077,13 @@ The important functionality is the removing <code>stop words</code>, as it is no
 <span class="n">train_sample_dl</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">train_sample_ds</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="(TODO)-Writing-the-training-method">(TODO) Writing the training method<a class="anchor-link" href="#(TODO)-Writing-the-training-method">&#182;</a></h3><p>Next we need to write the training code itself. This should be very similar to training methods that you have written before to train PyTorch models. We will leave any difficult aspects such as model saving / loading and parameter loading until a little later.</p>
 
@@ -12777,7 +14092,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">epochs</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">loss_fn</span><span class="p">,</span> <span class="n">device</span><span class="p">):</span>
@@ -12801,14 +14116,13 @@ The important functionality is the removing <code>stop words</code>, as it is no
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Epoch: </span><span class="si">{}</span><span class="s2">, BCELoss: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="p">,</span> <span class="n">total_loss</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_loader</span><span class="p">)))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Supposing we have the training method above, we will test that it is working by writing a bit of code in the notebook that executes our training method on the small sample training set that we loaded earlier. The reason for doing this in the notebook is so that we have an opportunity to fix any errors that arise early when they are easier to diagnose.</p>
 
@@ -12817,13 +14131,14 @@ The important functionality is the removing <code>stop words</code>, as it is no
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
 <span class="kn">from</span> <span class="nn">train.model</span> <span class="k">import</span> <span class="n">LSTMClassifier</span>
 
 <span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda&quot;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">LSTMClassifier</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">5000</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
 <span class="n">loss_fn</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">BCELoss</span><span class="p">()</span>
@@ -12831,7 +14146,7 @@ The important functionality is the removing <code>stop words</code>, as it is no
 <span class="n">train</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_sample_dl</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">loss_fn</span><span class="p">,</span> <span class="n">device</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12841,15 +14156,16 @@ The important functionality is the removing <code>stop words</code>, as it is no
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch: 1, BCELoss: 0.690700101852417
-Epoch: 2, BCELoss: 0.6812818288803101
-Epoch: 3, BCELoss: 0.6734739899635315
-Epoch: 4, BCELoss: 0.6653309106826782
-Epoch: 5, BCELoss: 0.6558834075927734
+<pre>cpu
+Epoch: 1, BCELoss: 0.694994592666626
+Epoch: 2, BCELoss: 0.6854579448699951
+Epoch: 3, BCELoss: 0.6770870685577393
+Epoch: 4, BCELoss: 0.6679135799407959
+Epoch: 5, BCELoss: 0.6568812131881714
 </pre>
 </div>
 </div>
@@ -12859,8 +14175,7 @@ Epoch: 5, BCELoss: 0.6558834075927734
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In order to construct a PyTorch model using SageMaker we must provide SageMaker with a training script. We may optionally include a directory which will be copied to the container and from which our training code will be run. When the training container is executed it will check the uploaded directory (if there is one) for a <code>requirements.txt</code> file and install any required Python libraries, after which the training script will be run.</p>
 
@@ -12868,8 +14183,7 @@ Epoch: 5, BCELoss: 0.6558834075927734
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="(TODO)-Training-the-model">(TODO) Training the model<a class="anchor-link" href="#(TODO)-Training-the-model">&#182;</a></h3><p>When a PyTorch model is constructed in SageMaker, an entry point must be specified. This is the Python file which will be executed when the model is trained. Inside of the <code>train</code> directory is a file called <code>train.py</code> which has been provided and which contains most of the necessary code to train our model. The only thing that is missing is the implementation of the <code>train()</code> method which you wrote earlier in this notebook.</p>
 <p><strong>TODO</strong>: Copy the <code>train()</code> method written above and paste it into the <code>train/train.py</code> file where required.</p>
@@ -12880,7 +14194,7 @@ Epoch: 5, BCELoss: 0.6558834075927734
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sagemaker.pytorch</span> <span class="k">import</span> <span class="n">PyTorch</span>
@@ -12897,20 +14211,20 @@ Epoch: 5, BCELoss: 0.6558834075927734
                     <span class="p">})</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s1">&#39;training&#39;</span><span class="p">:</span> <span class="n">input_data</span><span class="p">})</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12920,145 +14234,138 @@ Epoch: 5, BCELoss: 0.6558834075927734
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:sagemaker:Creating training-job with name: sagemaker-pytorch-2019-01-13-08-02-23-054
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2019-01-13 08:02:24 Starting - Starting the training job...
-2019-01-13 08:02:35 Starting - Launching requested ML instances......
-2019-01-13 08:03:31 Starting - Preparing the instances for training.........
-2019-01-13 08:05:25 Downloading - Downloading input data
-2019-01-13 08:05:25 Training - Downloading the training image...
-2019-01-13 08:05:46 Training - Training image download completed. Training in progress..
+<pre>2019-06-23 13:22:54 Starting - Starting the training job...
+2019-06-23 13:22:55 Starting - Launching requested ML instances......
+2019-06-23 13:23:54 Starting - Preparing the instances for training......
+2019-06-23 13:25:09 Downloading - Downloading input data...
+2019-06-23 13:25:41 Training - Downloading the training image...
+2019-06-23 13:26:12 Training - Training image download completed. Training in progress.
 <span class="ansi-red-fg">bash: cannot set terminal process group (-1): Inappropriate ioctl for device</span>
 <span class="ansi-red-fg">bash: no job control in this shell</span>
-<span class="ansi-red-fg">2019-01-13 08:05:47,707 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training</span>
-<span class="ansi-red-fg">2019-01-13 08:05:47,731 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.</span>
-<span class="ansi-red-fg">2019-01-13 08:05:47,737 sagemaker_pytorch_container.training INFO     Invoking user training script.</span>
-<span class="ansi-red-fg">2019-01-13 08:05:47,993 sagemaker-containers INFO     Module train does not provide a setup.py. </span>
+<span class="ansi-red-fg">2019-06-23 13:26:12,914 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training</span>
+<span class="ansi-red-fg">2019-06-23 13:26:12,939 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.</span>
+<span class="ansi-red-fg">2019-06-23 13:26:19,157 sagemaker_pytorch_container.training INFO     Invoking user training script.</span>
+<span class="ansi-red-fg">2019-06-23 13:26:19,411 sagemaker-containers INFO     Module train does not provide a setup.py. </span>
 <span class="ansi-red-fg">Generating setup.py</span>
-<span class="ansi-red-fg">2019-01-13 08:05:47,994 sagemaker-containers INFO     Generating setup.cfg</span>
-<span class="ansi-red-fg">2019-01-13 08:05:47,994 sagemaker-containers INFO     Generating MANIFEST.in</span>
-<span class="ansi-red-fg">2019-01-13 08:05:47,994 sagemaker-containers INFO     Installing module with the following command:</span>
+<span class="ansi-red-fg">2019-06-23 13:26:19,411 sagemaker-containers INFO     Generating setup.cfg</span>
+<span class="ansi-red-fg">2019-06-23 13:26:19,411 sagemaker-containers INFO     Generating MANIFEST.in</span>
+<span class="ansi-red-fg">2019-06-23 13:26:19,412 sagemaker-containers INFO     Installing module with the following command:</span>
 <span class="ansi-red-fg">/usr/bin/python -m pip install -U . -r requirements.txt</span>
 <span class="ansi-red-fg">Processing /opt/ml/code</span>
-<span class="ansi-red-fg">Collecting pandas (from -r requirements.txt (line 1))
-  Downloading https://files.pythonhosted.org/packages/5d/d4/6e9c56a561f1d27407bf29318ca43f36ccaa289271b805a30034eb3a8ec4/pandas-0.23.4-cp35-cp35m-manylinux1_x86_64.whl (8.7MB)</span>
-<span class="ansi-red-fg">Requirement already up-to-date: numpy in /usr/local/lib/python3.5/dist-packages (from -r requirements.txt (line 2)) (1.15.4)</span>
+<span class="ansi-red-fg">Collecting pandas (from -r requirements.txt (line 1))</span>
+<span class="ansi-red-fg">  Downloading https://files.pythonhosted.org/packages/74/24/0cdbf8907e1e3bc5a8da03345c23cbed7044330bb8f73bb12e711a640a00/pandas-0.24.2-cp35-cp35m-manylinux1_x86_64.whl (10.0MB)</span>
+<span class="ansi-red-fg">Collecting numpy (from -r requirements.txt (line 2))</span>
+<span class="ansi-red-fg">  Downloading https://files.pythonhosted.org/packages/bb/ef/d5a21cbc094d3f4d5b5336494dbcc9550b70c766a8345513c7c24ed18418/numpy-1.16.4-cp35-cp35m-manylinux1_x86_64.whl (17.2MB)</span>
 <span class="ansi-red-fg">Collecting nltk (from -r requirements.txt (line 3))
-  Downloading https://files.pythonhosted.org/packages/6f/ed/9c755d357d33bc1931e157f537721efb5b88d2c583fe593cc09603076cc3/nltk-3.4.zip (1.4MB)</span>
+  Downloading https://files.pythonhosted.org/packages/8d/5d/825889810b85c303c8559a3fd74d451d80cf3585a851f2103e69576bf583/nltk-3.4.3.zip (1.4MB)</span>
 <span class="ansi-red-fg">Collecting beautifulsoup4 (from -r requirements.txt (line 4))
   Downloading https://files.pythonhosted.org/packages/1d/5d/3260694a59df0ec52f8b4883f5d23b130bc237602a1411fa670eae12351e/beautifulsoup4-4.7.1-py3-none-any.whl (94kB)</span>
 <span class="ansi-red-fg">Collecting html5lib (from -r requirements.txt (line 5))
   Downloading https://files.pythonhosted.org/packages/a5/62/bbd2be0e7943ec8504b517e62bab011b4946e1258842bc159e5dfde15b96/html5lib-1.0.1-py2.py3-none-any.whl (117kB)</span>
 <span class="ansi-red-fg">Requirement already satisfied, skipping upgrade: python-dateutil&gt;=2.5.0 in /usr/local/lib/python3.5/dist-packages (from pandas-&gt;-r requirements.txt (line 1)) (2.7.5)</span>
 <span class="ansi-red-fg">Collecting pytz&gt;=2011k (from pandas-&gt;-r requirements.txt (line 1))</span>
-<span class="ansi-red-fg">  Downloading https://files.pythonhosted.org/packages/61/28/1d3920e4d1d50b19bc5d24398a7cd85cc7b9a75a490570d5a30c57622d34/pytz-2018.9-py2.py3-none-any.whl (510kB)</span>
+<span class="ansi-red-fg">  Downloading https://files.pythonhosted.org/packages/3d/73/fe30c2daaaa0713420d0382b16fbb761409f532c56bdcc514bf7b6262bb6/pytz-2019.1-py2.py3-none-any.whl (510kB)</span>
 <span class="ansi-red-fg">Requirement already satisfied, skipping upgrade: six in /usr/local/lib/python3.5/dist-packages (from nltk-&gt;-r requirements.txt (line 3)) (1.11.0)</span>
-<span class="ansi-red-fg">Collecting singledispatch (from nltk-&gt;-r requirements.txt (line 3))
-  Downloading https://files.pythonhosted.org/packages/c5/10/369f50bcd4621b263927b0a1519987a04383d4a98fb10438042ad410cf88/singledispatch-3.4.0.3-py2.py3-none-any.whl</span>
 <span class="ansi-red-fg">Collecting soupsieve&gt;=1.2 (from beautifulsoup4-&gt;-r requirements.txt (line 4))
-  Downloading https://files.pythonhosted.org/packages/7d/83/0b9f367f5f3beb44ee98d783fdfceb37cde6c4e43b5d6f2a12e44285d655/soupsieve-1.7-py2.py3-none-any.whl</span>
+  Downloading https://files.pythonhosted.org/packages/b9/a5/7ea40d0f8676bde6e464a6435a48bc5db09b1a8f4f06d41dd997b8f3c616/soupsieve-1.9.1-py2.py3-none-any.whl</span>
 <span class="ansi-red-fg">Collecting webencodings (from html5lib-&gt;-r requirements.txt (line 5))
   Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl</span>
 <span class="ansi-red-fg">Building wheels for collected packages: nltk, train
   Running setup.py bdist_wheel for nltk: started</span>
 <span class="ansi-red-fg">  Running setup.py bdist_wheel for nltk: finished with status &#39;done&#39;
-  Stored in directory: /root/.cache/pip/wheels/4b/c8/24/b2343664bcceb7147efeb21c0b23703a05b23fcfeaceaa2a1e
+  Stored in directory: /root/.cache/pip/wheels/54/40/b7/c56ad418e6cd4d9e1e594b5e138d1ca6eec11a6ee3d464e5bb
   Running setup.py bdist_wheel for train: started
   Running setup.py bdist_wheel for train: finished with status &#39;done&#39;
-  Stored in directory: /tmp/pip-ephem-wheel-cache-yt8708o4/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3</span>
+  Stored in directory: /tmp/pip-ephem-wheel-cache-0yksd89v/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3</span>
 <span class="ansi-red-fg">Successfully built nltk train</span>
-<span class="ansi-red-fg">Installing collected packages: pytz, pandas, singledispatch, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train</span>
-<span class="ansi-red-fg">Successfully installed beautifulsoup4-4.7.1 html5lib-1.0.1 nltk-3.4 pandas-0.23.4 pytz-2018.9 singledispatch-3.4.0.3 soupsieve-1.7 train-1.0.0 webencodings-0.5.1</span>
-<span class="ansi-red-fg">2019-01-13 08:05:56,979 sagemaker-containers INFO     Invoking user script
+<span class="ansi-red-fg">Installing collected packages: numpy, pytz, pandas, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train
+  Found existing installation: numpy 1.15.4
+    Uninstalling numpy-1.15.4:</span>
+<span class="ansi-red-fg">      Successfully uninstalled numpy-1.15.4</span>
+<span class="ansi-red-fg">Successfully installed beautifulsoup4-4.7.1 html5lib-1.0.1 nltk-3.4.3 numpy-1.16.4 pandas-0.24.2 pytz-2019.1 soupsieve-1.9.1 train-1.0.0 webencodings-0.5.1</span>
+<span class="ansi-red-fg">You are using pip version 18.1, however version 19.1.1 is available.</span>
+<span class="ansi-red-fg">You should consider upgrading via the &#39;pip install --upgrade pip&#39; command.</span>
+<span class="ansi-red-fg">2019-06-23 13:26:32,321 sagemaker-containers INFO     Invoking user script
 </span>
 <span class="ansi-red-fg">Training Env:
 </span>
 <span class="ansi-red-fg">{
+    &#34;hyperparameters&#34;: {
+        &#34;hidden_dim&#34;: 200,
+        &#34;epochs&#34;: 10
+    },
+    &#34;framework_module&#34;: &#34;sagemaker_pytorch_container.training:main&#34;,
+    &#34;current_host&#34;: &#34;algo-1&#34;,
+    &#34;user_entry_point&#34;: &#34;train.py&#34;,
     &#34;output_data_dir&#34;: &#34;/opt/ml/output/data&#34;,
-    &#34;input_config_dir&#34;: &#34;/opt/ml/input/config&#34;,
-    &#34;job_name&#34;: &#34;sagemaker-pytorch-2019-01-13-08-02-23-054&#34;,
-    &#34;module_dir&#34;: &#34;s3://sagemaker-ap-northeast-2-310211424080/sagemaker-pytorch-2019-01-13-08-02-23-054/source/sourcedir.tar.gz&#34;,
-    &#34;hosts&#34;: [
-        &#34;algo-1&#34;
-    ],
+    &#34;output_dir&#34;: &#34;/opt/ml/output&#34;,
     &#34;channel_input_dirs&#34;: {
         &#34;training&#34;: &#34;/opt/ml/input/data/training&#34;
     },
-    &#34;output_intermediate_dir&#34;: &#34;/opt/ml/output/intermediate&#34;,
-    &#34;model_dir&#34;: &#34;/opt/ml/model&#34;,
-    &#34;output_dir&#34;: &#34;/opt/ml/output&#34;,
-    &#34;log_level&#34;: 20,
-    &#34;hyperparameters&#34;: {
-        &#34;epochs&#34;: 10,
-        &#34;hidden_dim&#34;: 200
-    },
-    &#34;additional_framework_parameters&#34;: {},
-    &#34;current_host&#34;: &#34;algo-1&#34;,
-    &#34;input_data_config&#34;: {
-        &#34;training&#34;: {
-            &#34;TrainingInputMode&#34;: &#34;File&#34;,
-            &#34;S3DistributionType&#34;: &#34;FullyReplicated&#34;,
-            &#34;RecordWrapperType&#34;: &#34;None&#34;
-        }
-    },
+    &#34;num_cpus&#34;: 4,
+    &#34;input_dir&#34;: &#34;/opt/ml/input&#34;,
     &#34;num_gpus&#34;: 1,
-    &#34;framework_module&#34;: &#34;sagemaker_pytorch_container.training:main&#34;,
-    &#34;module_name&#34;: &#34;train&#34;,
+    &#34;job_name&#34;: &#34;sagemaker-pytorch-2019-06-23-13-22-52-919&#34;,
+    &#34;log_level&#34;: 20,
+    &#34;module_dir&#34;: &#34;s3://sagemaker-us-west-2-832486793135/sagemaker-pytorch-2019-06-23-13-22-52-919/source/sourcedir.tar.gz&#34;,
+    &#34;additional_framework_parameters&#34;: {},
+    &#34;network_interface_name&#34;: &#34;eth0&#34;,
+    &#34;output_intermediate_dir&#34;: &#34;/opt/ml/output/intermediate&#34;,
     &#34;resource_config&#34;: {
         &#34;hosts&#34;: [
             &#34;algo-1&#34;
         ],
-        &#34;current_host&#34;: &#34;algo-1&#34;,
-        &#34;network_interface_name&#34;: &#34;ethwe&#34;
+        &#34;network_interface_name&#34;: &#34;eth0&#34;,
+        &#34;current_host&#34;: &#34;algo-1&#34;
     },
-    &#34;num_cpus&#34;: 4,
-    &#34;user_entry_point&#34;: &#34;train.py&#34;,
-    &#34;network_interface_name&#34;: &#34;ethwe&#34;,
-    &#34;input_dir&#34;: &#34;/opt/ml/input&#34;</span>
+    &#34;hosts&#34;: [
+        &#34;algo-1&#34;
+    ],
+    &#34;model_dir&#34;: &#34;/opt/ml/model&#34;,
+    &#34;input_config_dir&#34;: &#34;/opt/ml/input/config&#34;,
+    &#34;input_data_config&#34;: {
+        &#34;training&#34;: {
+            &#34;S3DistributionType&#34;: &#34;FullyReplicated&#34;,
+            &#34;RecordWrapperType&#34;: &#34;None&#34;,
+            &#34;TrainingInputMode&#34;: &#34;File&#34;
+        }
+    },
+    &#34;module_name&#34;: &#34;train&#34;</span>
 <span class="ansi-red-fg">}
 </span>
 <span class="ansi-red-fg">Environment variables:
 </span>
+<span class="ansi-red-fg">SM_HPS={&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200}</span>
+<span class="ansi-red-fg">SM_MODULE_NAME=train</span>
+<span class="ansi-red-fg">SM_NETWORK_INTERFACE_NAME=eth0</span>
 <span class="ansi-red-fg">SM_LOG_LEVEL=20</span>
-<span class="ansi-red-fg">SM_INPUT_DATA_CONFIG={&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}}</span>
-<span class="ansi-red-fg">SM_MODULE_DIR=s3://sagemaker-ap-northeast-2-310211424080/sagemaker-pytorch-2019-01-13-08-02-23-054/source/sourcedir.tar.gz</span>
+<span class="ansi-red-fg">SM_FRAMEWORK_PARAMS={}</span>
 <span class="ansi-red-fg">SM_CURRENT_HOST=algo-1</span>
+<span class="ansi-red-fg">PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages</span>
+<span class="ansi-red-fg">SM_INPUT_DIR=/opt/ml/input</span>
+<span class="ansi-red-fg">SM_NUM_CPUS=4</span>
+<span class="ansi-red-fg">SM_CHANNEL_TRAINING=/opt/ml/input/data/training</span>
 <span class="ansi-red-fg">SM_NUM_GPUS=1</span>
-<span class="ansi-red-fg">SM_TRAINING_ENV={&#34;additional_framework_parameters&#34;:{},&#34;channel_input_dirs&#34;:{&#34;training&#34;:&#34;/opt/ml/input/data/training&#34;},&#34;current_host&#34;:&#34;algo-1&#34;,&#34;framework_module&#34;:&#34;sagemaker_pytorch_container.training:main&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;hyperparameters&#34;:{&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200},&#34;input_config_dir&#34;:&#34;/opt/ml/input/config&#34;,&#34;input_data_config&#34;:{&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}},&#34;input_dir&#34;:&#34;/opt/ml/input&#34;,&#34;job_name&#34;:&#34;sagemaker-pytorch-2019-01-13-08-02-23-054&#34;,&#34;log_level&#34;:20,&#34;model_dir&#34;:&#34;/opt/ml/model&#34;,&#34;module_dir&#34;:&#34;s3://sagemaker-ap-northeast-2-310211424080/sagemaker-pytorch-2019-01-13-08-02-23-054/source/sourcedir.tar.gz&#34;,&#34;module_name&#34;:&#34;train&#34;,&#34;network_interface_name&#34;:&#34;ethwe&#34;,&#34;num_cpus&#34;:4,&#34;num_gpus&#34;:1,&#34;output_data_dir&#34;:&#34;/opt/ml/output/data&#34;,&#34;output_dir&#34;:&#34;/opt/ml/output&#34;,&#34;output_intermediate_dir&#34;:&#34;/opt/ml/output/intermediate&#34;,&#34;resource_config&#34;:{&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;ethwe&#34;},&#34;user_entry_point&#34;:&#34;train.py&#34;}</span>
+<span class="ansi-red-fg">SM_USER_ARGS=[&#34;--epochs&#34;,&#34;10&#34;,&#34;--hidden_dim&#34;,&#34;200&#34;]</span>
+<span class="ansi-red-fg">SM_TRAINING_ENV={&#34;additional_framework_parameters&#34;:{},&#34;channel_input_dirs&#34;:{&#34;training&#34;:&#34;/opt/ml/input/data/training&#34;},&#34;current_host&#34;:&#34;algo-1&#34;,&#34;framework_module&#34;:&#34;sagemaker_pytorch_container.training:main&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;hyperparameters&#34;:{&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200},&#34;input_config_dir&#34;:&#34;/opt/ml/input/config&#34;,&#34;input_data_config&#34;:{&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}},&#34;input_dir&#34;:&#34;/opt/ml/input&#34;,&#34;job_name&#34;:&#34;sagemaker-pytorch-2019-06-23-13-22-52-919&#34;,&#34;log_level&#34;:20,&#34;model_dir&#34;:&#34;/opt/ml/model&#34;,&#34;module_dir&#34;:&#34;s3://sagemaker-us-west-2-832486793135/sagemaker-pytorch-2019-06-23-13-22-52-919/source/sourcedir.tar.gz&#34;,&#34;module_name&#34;:&#34;train&#34;,&#34;network_interface_name&#34;:&#34;eth0&#34;,&#34;num_cpus&#34;:4,&#34;num_gpus&#34;:1,&#34;output_data_dir&#34;:&#34;/opt/ml/output/data&#34;,&#34;output_dir&#34;:&#34;/opt/ml/output&#34;,&#34;output_intermediate_dir&#34;:&#34;/opt/ml/output/intermediate&#34;,&#34;resource_config&#34;:{&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;},&#34;user_entry_point&#34;:&#34;train.py&#34;}</span>
+<span class="ansi-red-fg">SM_INPUT_DATA_CONFIG={&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}}</span>
+<span class="ansi-red-fg">SM_OUTPUT_DIR=/opt/ml/output</span>
+<span class="ansi-red-fg">SM_HP_EPOCHS=10</span>
+<span class="ansi-red-fg">SM_MODULE_DIR=s3://sagemaker-us-west-2-832486793135/sagemaker-pytorch-2019-06-23-13-22-52-919/source/sourcedir.tar.gz</span>
+<span class="ansi-red-fg">SM_HP_HIDDEN_DIM=200</span>
+<span class="ansi-red-fg">SM_INPUT_CONFIG_DIR=/opt/ml/input/config</span>
+<span class="ansi-red-fg">SM_MODEL_DIR=/opt/ml/model</span>
+<span class="ansi-red-fg">SM_HOSTS=[&#34;algo-1&#34;]</span>
+<span class="ansi-red-fg">SM_RESOURCE_CONFIG={&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;}</span>
+<span class="ansi-red-fg">SM_USER_ENTRY_POINT=train.py</span>
+<span class="ansi-red-fg">SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate</span>
 <span class="ansi-red-fg">SM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main</span>
 <span class="ansi-red-fg">SM_OUTPUT_DATA_DIR=/opt/ml/output/data</span>
-<span class="ansi-red-fg">SM_CHANNELS=[&#34;training&#34;]</span>
-<span class="ansi-red-fg">SM_OUTPUT_DIR=/opt/ml/output</span>
-<span class="ansi-red-fg">SM_CHANNEL_TRAINING=/opt/ml/input/data/training</span>
-<span class="ansi-red-fg">SM_MODULE_NAME=train</span>
-<span class="ansi-red-fg">SM_NUM_CPUS=4</span>
-<span class="ansi-red-fg">SM_USER_ARGS=[&#34;--epochs&#34;,&#34;10&#34;,&#34;--hidden_dim&#34;,&#34;200&#34;]</span>
-<span class="ansi-red-fg">SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate</span>
-<span class="ansi-red-fg">SM_FRAMEWORK_PARAMS={}</span>
-<span class="ansi-red-fg">SM_USER_ENTRY_POINT=train.py</span>
-<span class="ansi-red-fg">SM_HP_HIDDEN_DIM=200</span>
-<span class="ansi-red-fg">SM_RESOURCE_CONFIG={&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;ethwe&#34;}</span>
-<span class="ansi-red-fg">SM_HOSTS=[&#34;algo-1&#34;]</span>
-<span class="ansi-red-fg">SM_MODEL_DIR=/opt/ml/model</span>
-<span class="ansi-red-fg">SM_HPS={&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200}</span>
-<span class="ansi-red-fg">SM_NETWORK_INTERFACE_NAME=ethwe</span>
-<span class="ansi-red-fg">SM_INPUT_DIR=/opt/ml/input</span>
-<span class="ansi-red-fg">PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages</span>
-<span class="ansi-red-fg">SM_HP_EPOCHS=10</span>
-<span class="ansi-red-fg">SM_INPUT_CONFIG_DIR=/opt/ml/input/config
+<span class="ansi-red-fg">SM_CHANNELS=[&#34;training&#34;]
 </span>
 <span class="ansi-red-fg">Invoking script with the following command:
 </span>
@@ -13068,21 +14375,21 @@ Epoch: 5, BCELoss: 0.6558834075927734
 <span class="ansi-red-fg">Using device cuda.</span>
 <span class="ansi-red-fg">Get train data loader.</span>
 <span class="ansi-red-fg">Model loaded with embedding_dim 32, hidden_dim 200, vocab_size 5000.</span>
-<span class="ansi-red-fg">Epoch: 1, BCELoss: 0.6790867022105626</span>
-<span class="ansi-red-fg">Epoch: 2, BCELoss: 0.6444682843831121</span>
-<span class="ansi-red-fg">Epoch: 3, BCELoss: 0.5566190730552284</span>
-<span class="ansi-red-fg">Epoch: 4, BCELoss: 0.4756854103536022</span>
-<span class="ansi-red-fg">Epoch: 5, BCELoss: 0.4228520691394806</span>
-<span class="ansi-red-fg">Epoch: 6, BCELoss: 0.38793041815563123</span>
-<span class="ansi-red-fg">Epoch: 7, BCELoss: 0.39975202874261506</span>
-<span class="ansi-red-fg">Epoch: 8, BCELoss: 0.3486297653645885</span>
-<span class="ansi-red-fg">Epoch: 9, BCELoss: 0.3119342406185306</span>
+<span class="ansi-red-fg">Epoch: 1, BCELoss: 0.6735607178843751</span>
+<span class="ansi-red-fg">Epoch: 2, BCELoss: 0.5967811102769813</span>
+<span class="ansi-red-fg">Epoch: 3, BCELoss: 0.5164487459221665</span>
+<span class="ansi-red-fg">Epoch: 4, BCELoss: 0.4373238001550947</span>
+<span class="ansi-red-fg">Epoch: 5, BCELoss: 0.37706016338601406</span>
+<span class="ansi-red-fg">Epoch: 6, BCELoss: 0.3451652508609149</span>
+<span class="ansi-red-fg">Epoch: 7, BCELoss: 0.3252115438179094</span>
+<span class="ansi-red-fg">Epoch: 8, BCELoss: 0.30886718691611775</span>
+<span class="ansi-red-fg">Epoch: 9, BCELoss: 0.2801142477867555</span>
+<span class="ansi-red-fg">Epoch: 10, BCELoss: 0.26593530999154463</span>
+<span class="ansi-red-fg">2019-06-23 13:29:33,853 sagemaker-containers INFO     Reporting training SUCCESS</span>
 
-2019-01-13 08:08:54 Uploading - Uploading generated training model<span class="ansi-red-fg">Epoch: 10, BCELoss: 0.3572673082959895</span>
-<span class="ansi-red-fg">2019-01-13 08:08:52,228 sagemaker-containers INFO     Reporting training SUCCESS</span>
-
-2019-01-13 08:08:59 Completed - Training job completed
-Billable seconds: 233
+2019-06-23 13:29:40 Uploading - Uploading generated training model
+2019-06-23 13:29:40 Completed - Training job completed
+Billable seconds: 271
 </pre>
 </div>
 </div>
@@ -13092,8 +14399,7 @@ Billable seconds: 233
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-5:-Testing-the-model">Step 5: Testing the model<a class="anchor-link" href="#Step-5:-Testing-the-model">&#182;</a></h2><p>As mentioned at the top of this notebook, we will be testing this model by first deploying it and then sending the testing data to the deployed endpoint. We will do this so that we can make sure that the deployed model is working correctly.</p>
 <h2 id="Step-6:-Deploy-the-model-for-testing">Step 6: Deploy the model for testing<a class="anchor-link" href="#Step-6:-Deploy-the-model-for-testing">&#182;</a></h2><p>Now that we have trained our model, we would like to test it to see how it performs. Currently our model takes input of the form <code>review_length, review[500]</code> where <code>review[500]</code> is a sequence of <code>500</code> integers which describe the words present in the review, encoded using <code>word_dict</code>. Fortunately for us, SageMaker provides built-in inference code for models with simple inputs such as this.</p>
@@ -13109,14 +14415,14 @@ Billable seconds: 233
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Deploy the trained model</span>
 <span class="n">predictor</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">deploy</span><span class="p">(</span><span class="n">initial_instance_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">instance_type</span><span class="o">=</span><span class="s1">&#39;ml.p2.xlarge&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13126,23 +14432,22 @@ Billable seconds: 233
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:sagemaker:Creating model with name: sagemaker-pytorch-2019-01-13-08-02-23-054
-INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-08-02-23-054
+<pre>Using already existing model: sagemaker-pytorch-2019-06-23-13-22-52-919
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>--------------------------------------------------------------------------!</pre>
+<pre>------------------------------------------------------------------------------------------------!</pre>
 </div>
 </div>
 
@@ -13151,8 +14456,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-08-02-23
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-7---Use-the-model-for-testing">Step 7 - Use the model for testing<a class="anchor-link" href="#Step-7---Use-the-model-for-testing">&#182;</a></h2><p>Once deployed, we can read in the test data and send it off to our deployed model to get some results. Once we collect all of the results we can determine how accurate our model is.</p>
 
@@ -13161,20 +14465,20 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-08-02-23
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_X_len</span><span class="p">),</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_X</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We split the data into chunks and send each chunk seperately, accumulating the results.</span>
@@ -13188,35 +14492,35 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-08-02-23
     <span class="k">return</span> <span class="n">predictions</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">test_X</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 <span class="n">predictions</span> <span class="o">=</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">accuracy_score</span>
 <span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_y</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13226,13 +14530,13 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-08-02-23
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[68]:</div>
+    <div class="prompt output_prompt">Out[57]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.7664</pre>
+<pre>0.84316</pre>
 </div>
 
 </div>
@@ -13242,8 +14546,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-08-02-23
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question:</strong> How does this model compare to the XGBoost model you created earlier? Why might these two models perform differently on this dataset? Which do <em>you</em> think is better for sentiment analysis?</p>
 
@@ -13251,8 +14554,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-08-02-23
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
 As accuracy is almost same with XGBoost model, so I don't think there is much difference.</p>
@@ -13261,8 +14563,7 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="(TODO)-More-testing">(TODO) More testing<a class="anchor-link" href="#(TODO)-More-testing">&#182;</a></h3><p>We now have a trained model which has been deployed and which we can send processed reviews to and which returns the predicted sentiment. However, ultimately we would like to be able to send our model an unprocessed review. That is, we would like to send the review itself as a string. For example, suppose we wish to send the following review to our model.</p>
 
@@ -13271,20 +14572,19 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_review</span> <span class="o">=</span> <span class="s1">&#39;The simplest pleasures in life are the best, and this film is one of them. Combining a rather basic storyline of love and adventure this movie transcends the usual weekend fair with wit and unmitigated charm.&#39;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The question we now need to answer is, how do we send this review to our model?</p>
 <p>Recall in the first section of this notebook we did a bunch of data processing to the IMDb dataset. In particular, we did two specific things to the provided reviews.</p>
@@ -13300,7 +14600,7 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Convert test_review into a form usable by the model and save the results in test_data</span>
@@ -13308,14 +14608,13 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 <span class="n">test_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">convert_and_pad</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">test_data</span><span class="p">)[</span><span class="mi">0</span><span class="p">])]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now that we have processed the review, we can send the resulting array to our model to predict the sentiment of the review.</p>
 
@@ -13324,13 +14623,13 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13340,13 +14639,13 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[71]:</div>
+    <div class="prompt output_prompt">Out[60]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array(0.6962088, dtype=float32)</pre>
+<pre>array(0.5785321, dtype=float32)</pre>
 </div>
 
 </div>
@@ -13356,8 +14655,7 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Since the return value of our model is close to <code>1</code>, we can be certain that the review we submitted is positive.</p>
 
@@ -13365,8 +14663,7 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Delete-the-endpoint">Delete the endpoint<a class="anchor-link" href="#Delete-the-endpoint">&#182;</a></h3><p>Of course, just like in the XGBoost notebook, once we've deployed an endpoint it continues to run until we tell it to shut down. Since we are done using our endpoint for now, we can delete it.</p>
 
@@ -13375,38 +14672,19 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">estimator</span><span class="o">.</span><span class="n">delete_endpoint</span><span class="p">()</span>
 </pre></div>
 
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:sagemaker:Deleting endpoint with name: sagemaker-pytorch-2019-01-13-08-02-23-054
-</pre>
-</div>
-</div>
-
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-6-(again)---Deploy-the-model-for-the-web-app">Step 6 (again) - Deploy the model for the web app<a class="anchor-link" href="#Step-6-(again)---Deploy-the-model-for-the-web-app">&#182;</a></h2><p>Now that we know that our model is working, it's time to create some custom inference code so that we can send the model a review which has not been processed and have it determine the sentiment of the review.</p>
 <p>As we saw above, by default the estimator which we created, when deployed, will use the entry script and directory which we provided when creating the model. However, since we now wish to accept a string as input and our model expects a processed review, we need to write some custom inference code.</p>
@@ -13426,13 +14704,13 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pygmentize serve/predict.py
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13442,26 +14720,26 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">argparse</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">json</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">os</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">pickle</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">sys</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">sagemaker_containers</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">pandas</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg">pd</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">numpy</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg">np</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">torch</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">torch.nn</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg">nn</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">torch.optim</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg">optim</span>
-<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg">torch.utils.data</span>
+<pre><span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">argparse</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">json</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">os</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">pickle</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">sys</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">sagemaker_containers</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">pandas</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">pd</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">numpy</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">np</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch.nn</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">nn</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch.optim</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">optim</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch.utils.data</span>
 
-<span class="ansi-blue-fg">from</span> <span class="ansi-cyan-fg">model</span> <span class="ansi-blue-fg">import</span> LSTMClassifier
+<span class="ansi-blue-fg">from</span> <span class="ansi-cyan-fg ansi-underline">model</span> <span class="ansi-blue-fg">import</span> LSTMClassifier
 
-<span class="ansi-blue-fg">from</span> <span class="ansi-cyan-fg">utils</span> <span class="ansi-blue-fg">import</span> review_to_words, convert_and_pad
+<span class="ansi-blue-fg">from</span> <span class="ansi-cyan-fg ansi-underline">utils</span> <span class="ansi-blue-fg">import</span> review_to_words, convert_and_pad
 
 <span class="ansi-blue-fg">def</span> <span class="ansi-green-fg">model_fn</span>(model_dir):
     <span class="ansi-yellow-fg">&#34;&#34;&#34;Load the PyTorch model from the `model_dir` directory.&#34;&#34;&#34;</span>
@@ -13551,8 +14829,7 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As mentioned earlier, the <code>model_fn</code> method is the same as the one provided in the training code and the <code>input_fn</code> and <code>output_fn</code> methods are very simple and your task will be to complete the <code>predict_fn</code> method. Make sure that you save the completed file as <code>predict.py</code> in the <code>serve</code> directory.</p>
 <p><strong>TODO</strong>: Complete the <code>predict_fn()</code> method in the <code>serve/predict.py</code> file.</p>
@@ -13561,8 +14838,7 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Deploying-the-model">Deploying the model<a class="anchor-link" href="#Deploying-the-model">&#182;</a></h3><p>Now that the custom inference code has been written, we will create and deploy our model. To begin with, we need to construct a new PyTorchModel object which points to the model artifacts created during training and also points to the inference code that we wish to use. Then we can call the deploy method to launch the deployment container.</p>
 <p><strong>NOTE</strong>: The default behaviour for a deployed PyTorch model is to assume that any input passed to the predictor is a <code>numpy</code> array. In our case we want to send a string so we need to construct a simple wrapper around the <code>RealTimePredictor</code> class to accomodate simple strings. In a more complicated situation you may want to provide a serialization object, for example if you wanted to sent image data.</p>
@@ -13572,7 +14848,7 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sagemaker.predictor</span> <span class="k">import</span> <span class="n">RealTimePredictor</span>
@@ -13591,7 +14867,7 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 <span class="n">predictor</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">deploy</span><span class="p">(</span><span class="n">initial_instance_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">instance_type</span><span class="o">=</span><span class="s1">&#39;ml.p2.xlarge&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13601,23 +14877,11 @@ As accuracy is almost same with XGBoost model, so I don't think there is much di
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:sagemaker:Creating model with name: sagemaker-pytorch-2019-01-13-09-00-09-279
-INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-09-00-09-279
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>--------------------------------------------------------------------------!</pre>
+<pre>------------------------------------------------------------------------------------------------!</pre>
 </div>
 </div>
 
@@ -13626,8 +14890,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-09-00-09
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Testing-the-model">Testing the model<a class="anchor-link" href="#Testing-the-model">&#182;</a></h3><p>Now that we have deployed our model with the custom inference code, we should test to see if everything is working. Here we test our model by loading the first <code>250</code> positive and negative reviews and send them to the endpoint, then collect the results. The reason for only sending some of the data is that the amount of time it takes for our model to process the input and then perform inference is quite long and so testing the entire data set would be prohibitive.</p>
 
@@ -13636,7 +14899,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-09-00-09
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[122]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
@@ -13680,20 +14943,20 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-09-00-09
     <span class="k">return</span> <span class="n">ground</span><span class="p">,</span> <span class="n">results</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[123]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ground</span><span class="p">,</span> <span class="n">results</span> <span class="o">=</span> <span class="n">test_reviews</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13703,7 +14966,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2019-01-13-09-00-09
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -13719,14 +14982,14 @@ Starting  neg  files
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[124]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">accuracy_score</span>
 <span class="n">accuracy_score</span><span class="p">(</span><span class="n">ground</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13736,13 +14999,13 @@ Starting  neg  files
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[124]:</div>
+    <div class="prompt output_prompt">Out[66]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.784</pre>
+<pre>0.84</pre>
 </div>
 
 </div>
@@ -13752,8 +15015,7 @@ Starting  neg  files
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As an additional test, we can try sending the <code>test_review</code> that we looked at earlier.</p>
 
@@ -13762,14 +15024,14 @@ Starting  neg  files
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">test_review</span><span class="p">)</span>
 <span class="n">predictor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_review</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13779,7 +15041,7 @@ Starting  neg  files
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -13790,7 +15052,7 @@ Starting  neg  files
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[129]:</div>
+    <div class="prompt output_prompt">Out[67]:</div>
 
 
 
@@ -13806,8 +15068,7 @@ Starting  neg  files
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now that we know our endpoint is working as expected, we can set up the web page that will interact with it. If you don't have time to finish the project now, make sure to skip down to the end of this notebook and shut down your endpoint. You can deploy it again when you come back.</p>
 
@@ -13815,8 +15076,7 @@ Starting  neg  files
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-7-(again):-Use-the-model-for-the-web-app">Step 7 (again): Use the model for the web app<a class="anchor-link" href="#Step-7-(again):-Use-the-model-for-the-web-app">&#182;</a></h2><blockquote><p><strong>TODO:</strong> This entire section and the next contain tasks for you to complete, mostly using the AWS console.</p>
 </blockquote>
@@ -13863,13 +15123,13 @@ Starting  neg  files
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">endpoint</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -13879,13 +15139,13 @@ Starting  neg  files
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[131]:</div>
+    <div class="prompt output_prompt">Out[68]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;sagemaker-pytorch-2019-01-13-09-00-09-279&#39;</pre>
+<pre>&#39;sagemaker-pytorch-2019-06-23-14-01-17-427&#39;</pre>
 </div>
 
 </div>
@@ -13895,8 +15155,7 @@ Starting  neg  files
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Once you have added the endpoint name to the Lambda function, click on <strong>Save</strong>. Your Lambda function is now up and running. Next we need to create a way for our web app to execute the Lambda function.</p>
 <h3 id="Setting-up-API-Gateway">Setting up API Gateway<a class="anchor-link" href="#Setting-up-API-Gateway">&#182;</a></h3><p>Now that our Lambda function is set up, it is time to create a new API using API Gateway that will trigger the Lambda function we have just created.</p>
@@ -13913,8 +15172,7 @@ Starting  neg  files
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step-4:-Deploying-our-web-app">Step 4: Deploying our web app<a class="anchor-link" href="#Step-4:-Deploying-our-web-app">&#182;</a></h2><p>Now that we have a publicly available API, we can start using it in a web app. For our purposes, we have provided a simple static html file which can make use of the public api you created earlier.</p>
 <p>In the <code>website</code> folder there should be a file called <code>index.html</code>. Download the file to your computer and open that file up in a text editor of your choice. There should be a line which contains <strong>**REPLACE WITH PUBLIC API URL**</strong>. Replace this string with the url that you wrote down in the last step and then save the file.</p>
@@ -13928,8 +15186,7 @@ Starting  neg  files
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now that your web app is working, trying playing around with it and see how well it works.</p>
 <p><strong>Question</strong>: Give an example of a review that you entered into your web app. What was the predicted sentiment of your example review?</p>
@@ -13938,8 +15195,7 @@ Starting  neg  files
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>I just put 'really good movie', and I got 'Your review is POSITIVE'.</p>
@@ -13949,8 +15205,7 @@ Starting  neg  files
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Delete-the-endpoint">Delete the endpoint<a class="anchor-link" href="#Delete-the-endpoint">&#182;</a></h3><p>Remember to always shut down your endpoint if you are no longer using it. You are charged for the length of time that the endpoint is running so if you forget and leave it on you could end up with an unexpectedly large bill.</p>
 
@@ -13959,31 +15214,26 @@ Starting  neg  files
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[132]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">delete_endpoint</span><span class="p">()</span>
 </pre></div>
 
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:sagemaker:Deleting endpoint with name: sagemaker-pytorch-2019-01-13-09-00-09-279
-</pre>
+    </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
